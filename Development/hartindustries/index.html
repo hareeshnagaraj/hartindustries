@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
+
+    <title>Hart Industries</title>
+
+    <script type="text/javascript">
+/*
+    var keys = [37, 38, 39, 40];
+
+    var i = 0;
+    var j = 0;
+
+    function preventDefault(e) {
+      e = e || window.event;
+      if (e.preventDefault)
+          e.preventDefault();
+      e.returnValue = false;  
+    }
+
+    function keydown(e) {
+        for (var i = keys.length; i--;) {
+            if (e.keyCode === keys[i]) {
+                preventDefault(e);
+                return;
+            }
+        }
+    }
+
+    function wheel(e) {
+      console.log("in wheel");
+      console.log(e.wheelDelta);
+    // setTimeout(function(){
+    //     console.log("in wheel");
+    // }, 3000);
+      if(e.wheelDelta < 0){
+          i++;
+          if(i > 150){
+            // window.alert('reached');
+            i = 0;
+            $('html, body').animate({
+                scrollTop: $(window).scrollTop() + 500
+            }, 500);
+          }
+      }
+      else{
+        j++;
+          if(j > 150){
+            // window.alert('reached');
+            j = 0;
+            $('html, body').animate({
+                scrollTop: $(window).scrollTop() - 500
+            }, 500);
+          }
+
+      }
+
+      preventDefault(e);
+      return;
+
+    }
+
+    function disable_scroll() {
+      if (window.addEventListener) {
+          window.addEventListener('DOMMouseScroll', wheel, false);
+      }
+      window.onmousewheel = document.onmousewheel = wheel;
+      document.onkeydown = keydown;
+    }
+
+    function enable_scroll() {
+        if (window.removeEventListener) {
+            window.removeEventListener('DOMMouseScroll', wheel, false);
+        }
+        window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
+    }*/
+
+
+
+    // var distance = 0;
+    // if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, true);
+    // window.onmousewheel = document.onmousewheel = wheel;
+
+    // function wheel(event) {
+    // var delta = 0;
+    // if (event.wheelDelta) {
+    //     delta = event.wheelDelta / 100;
+    //     console.log("wheelDelta" +  delta);
+
+    // }
+    // else if (event.detail) {
+    //     delta = -event.detail / 3;
+    //     console.log("detail" +  delta);
+    // }
+    // handle(delta);
+    // if (event.preventDefault){
+    //     event.preventDefault();
+    //     event.returnValue = false;
+    // }
+    // }
+    
+
+    // function handle(delta) {
+    // delta = -1;
+    // var time = 1000;
+    // distance = 1000;
+    // console.log(distance * delta);
+
+    //     $('html, body').animate({
+    //         scrollTop: $(window).scrollTop() - (distance * delta)
+    //     }, time );
+    // }
+
+
+    $(document).ready(function(){
+
+        // disable_scroll();
+    		
+        $("#hamburger").click(function(){
+            $("#hamburger_options").animate({ "height": "250px" }, 200 );
+            $("#hamburger").hide();
+            $("#downarrow").show();
+        });
+
+         $("#downarrow").click(function(){
+            $("#hamburger_options").animate({ "height": "0px" }, 200 );
+            $("#hamburger").show();
+            $("#downarrow").hide();
+        });
+
+         var a = 2;
+         $("#learnarrow").click(function(){
+            var go_id = "#box"+a
+            if(a == 2){
+                go_id = "#box2";
+            }
+            if( a == 3){
+                go_id = "#footer";
+                $("#learnarrow").rotate({ animateTo:180},200)
+            }
+            if( a == 4){
+
+                go_id = "#box1";
+                $("#learnarrow").rotate({ animateTo:0},200)
+                a = 1;
+
+            }
+
+             $('html, body').animate({
+                scrollTop: $(go_id).offset().top
+            }, 500);
+
+            if(a!=4){
+                a++;
+            }
+            
+         });
+
+         $("#whitelogo").click(function(){
+            window.location = "index.html";
+         });
+
+    });
+    $(window).scroll(function(){
+    	var topdist = $(window).scrollTop();
+    	if(topdist < 100){
+
+
+    		$("#short_description").show();
+    	}
+    	if(topdist > 100){
+    		
+    		// $("#short_description").hide();
+    	}
+    	if(topdist > 600){
+
+
+    	}
+    });
+
+    </script>
+
+</head>
+<body>
+<div id="nav">
+    <div id="whitelogo">
+        <img src="img/hartlogo_small_white.png" />
+    </div>
+    <ul>
+        <li><a href="index.html" >HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="solutions.html">SOLUTIONS</a></li>
+        <li><a href="quality.html">QUALITY</a></li>
+        <li><a href="community.html">COMMUNITY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <div id="hamburger"><img src="img/hamburger.png"/></div>
+    <div id="downarrow"><img src="img/arrow_up.png"/></div>
+
+    <div id="hamburger_options">
+        <div>HOME</div>   
+        <div>ABOUT</div>   
+        <div>SOLUTIONS</div>   
+        <div>QUALITY</div>   
+        <div>COMMUNITY</div> 
+        <div>CONTACT</div>     
+    </div>
+</div>
+<div id="logo"><img id="logopic" src="img/hartlogo_blue.png" /></div>  
+<div id="box1">
+    <div class="short_description">
+    <div>Hart Industries has been providing quality packaging materials since 1969. We are located in a modern, hygienic, climate controlled facility in Owings Mills, Maryland.<br><br>Hart Industries, Inc. is your source for world class flexographic printing and converting for your packaging requirements. <br><br>Exceptional customer service defines Hart Industries and has made us a long term supplier to some of the largest companies both in the United States and abroad.<br><br>Let Hart Industries help you improve your operations and your bottom line with high quality, reliably consistent packaging solutions.
+    </div>
+    </div>
+</div>
+
+<div class="short_description_wide">
+<div>Hart Industries has been providing quality packaging materials since 1969. We are located in a modern, hygienic, climate controlled facility in Owings Mills, Maryland.<br><br>Hart Industries, Inc. is your source for world class flexographic printing and converting for your packaging requirements. <br><br>Exceptional customer service defines Hart Industries and has made us a long term supplier to some of the largest companies both in the United States and abroad.<br><br>Let Hart Industries help you improve your operations and your bottom line with high quality, reliably consistent packaging solutions.
+</div>
+</div>
+
+<div class="learn_more_text">Learn more</div>
+<div class="learn_more" id="learnarrow"><img src="img/hart_down_arrow.png" /></div>
+
+<div class="divider"></div>
+<div id="box2">
+<!--     <div class="short_description">
+    <div> -->
+    <div class="boxtitle">
+        Candy and Confectionary
+    </div>
+    <div class="boxinfo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    </div>
+</div>
+<div class="short_description_wide">
+<div>    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+</div>
+</div>
+
+<div class="divider"></div>
+
+<div id="box3">
+<!--     <div class="short_description">
+    <div> -->
+    <div class="boxtitle">
+        Tea
+    </div>
+    <div class="boxinfo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    </div>
+</div>
+<div class="short_description_wide" style="margin-top:-150px;">
+<div>    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+</div>
+</div>
+
+<div id="footer">
+    <div id="address">11412 Cronridge Drive, Owings Mills MD 2117</div>
+    <ul>
+        <li><img src="img/linkedinwhite.png" /></li>
+        <li><img src="img/fbwhite.png" /></li>
+        <li><img src="img/twitterwhite.png" /></li>
+
+    </ul>
+</div>
+</body>
+</html>

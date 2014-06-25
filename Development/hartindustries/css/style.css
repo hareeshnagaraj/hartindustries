@@ -1,0 +1,1343 @@
+html,body{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100;
+/*	overflow-y:scroll;
+	overflow-x:hidden;*/
+/*	marginop:-60px;
+*/}
+.divider{
+	width:100%;
+	height:10px;
+	background-color: #0054a4;
+}
+#whitelogo{
+	float: left;
+	margin-left: 40px;
+	cursor: pointer;
+}
+#whitelogo > img{
+	width: 70px;
+	margin:15px;
+}
+#contactbox{
+width: 30%;
+height: 100%;
+margin: auto;
+background-color: white;
+position: absolute;
+bottom: 50px;
+color:#0054a4;
+font-size: 15px;
+font-family: lato;
+}
+#contactbox > div{
+	width:90%;
+	margin:auto;
+	margin-top:150px;
+	line-height:20px;
+}
+@media handheld,screen and (min-width: 1000px) {
+/*
+	Desktops
+*/
+#communitySubIntro{
+	padding:20px;
+	color:#0054a4;
+	background-color: white;
+	font-size: 15px;
+	width:60%;
+	font-size: 15px;
+	font-family: lato;
+	margin-top: 20px;
+	margin-left: 5%;
+}
+#communitysubIntro2{
+	padding:20px;
+	color:#0054a4;
+	background-color: white;
+	font-size: 15px;
+	width:60%;
+	font-size: 15px;
+	font-family: lato;
+	margin-top: 200px;
+	margin-left: 5%;
+}
+#communityIntro{
+	text-align: left;
+	margin-top: 18%;
+}
+#communityIntro > div{
+	padding:20px;
+	color:#0054a4;
+	background-color: white;
+	font-size: 15px;
+	width:60%;
+	font-size: 25px;
+	font-family: lato;
+	margin-top: 20px;
+	margin-left: 5%;
+}
+#communityText{
+
+	position: absolute;
+	padding: 20px;
+	background-color: #0054a4;
+	color: white;
+	top: 14%;
+	left: 5%;
+	font-size: 40px;
+	font-family: lato;
+
+}
+#innerContainer{
+	width:600px;
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	right:5%;
+	top: 10%;
+	background-color:white; 
+	font-size: 20px;
+}
+#innerTitle{
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	left:5%;
+	top:10%;
+	background-color:white; 
+	font-size: 35px;
+}
+#innerTitle2{
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	left:5%;
+	top:10%;
+	background-color:white; 
+	font-size: 35px;
+}
+#qualityWrap{
+	width:100%;
+	height:80%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../img/hart_background8.jpg");
+	background-attachment: fixed;
+
+}
+#qualitySub2{
+	width:100%;
+	height:100%;
+	background-color: white;
+	border-top:5px solid #0054a4;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-image: url("../img/hart_background9.jpg");
+	background-attachment: fixed;
+}
+#communitywrap{
+	width:100%;
+	height:100%;
+	background-color: white;
+	border-top:5px solid #0054a4;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-image: url("../img/hart_background10.jpg");
+	background-attachment: fixed;
+	overflow-y:scroll;
+}
+#qualitySub{
+	width:100%;
+	height:40%;
+	background-color: white;
+	border-top:5px solid #0054a4;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+#qualityTitle{
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	left:5%;
+	top:20%;
+	background-color:white; 
+	font-size: 35px;
+}
+#qualitySubTitle{
+	width:400px;
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	left:5%;
+	top:40%;
+	background-color:white; 
+	font-size: 16px;
+}
+#qualitySubTitle2{
+	width:40%;
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	left:5%;
+	top:30%;
+	background-color:white; 
+	font-size: 16px;
+}
+#quality_right{
+	width:40%;
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	right:5%;
+	top:30%;
+	background-color:white; 
+	font-size: 16px;
+}
+#quality_right > h3{
+	font-size:25px;
+	margin-bottom:20px;
+	margin-top:5px;
+}
+#quality_haacp{
+	width:40%;
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	left:5%;
+	top:55%;
+	background-color:white; 
+	font-size: 16px;
+}
+#quality_haacp > h3{
+	font-size:25px;
+	margin-bottom:20px;
+	margin-top:5px;
+}
+#qualitySubContainer{
+	width:500px;
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	right:5%;
+	top: 20.5%;
+	background-color:white; 
+	font-size: 16px;
+}
+#markets_title{
+	position: absolute;
+	font-family: lato;
+	font-size: 35px;
+	color: white;
+	padding:20px;
+	background-color: #0054a4;
+	left:5%;
+	top:200px;
+	cursor: pointer;
+}
+#product_list_wide{
+	display: none;
+}
+#markets_title:hover{
+	background-color: white;
+	color:#0054a4;
+}
+#product_title:hover{
+	background-color: white;
+	color:#0054a4;
+}
+#product_title{
+	position: absolute;
+	font-family: lato;
+	font-size: 35px;
+	color: white;
+	padding:20px;
+	background-color: #0054a4;
+	left:5%;
+	top:100px;
+	cursor:pointer;
+}
+#market_list > ul > li > div{
+	width:100%;
+	display:none;
+	font-size: 12px;
+}
+#market_list > ul > li{
+	cursor:pointer;
+	margin-top:10px;
+}
+#market_list > ul{
+	padding:10px;
+	list-style-type: none;
+}
+#market_list{
+	display: none;
+	width: 30%;
+	padding:50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: absolute;
+	right:100px;
+	font-size: 19px;
+	top:100px;
+	background-color: white;
+	font-family: lato;
+	color: #0054a4;
+}
+#product_list > ul{
+	padding:10px;
+}
+#product_list{
+	width: 30%;
+	padding:50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: absolute;
+	right:100px;
+	font-size: 19px;
+	top:100px;
+	background-color: white;
+	font-family: lato;
+	color: #0054a4;
+}
+#product_cover{
+	position: relative;
+	width:100%;
+	height:100%;
+	background-size:cover;
+	background-position: 0px -200px;
+	background-image: url("../img/hart_background7.jpg");
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+#history_wrap_wide{
+	display: none;
+}
+#history_wrap > div{
+	width:100%;
+	margin:auto;
+	font-size: 17px;
+}
+.history_cover > #history_wrap{
+	position: absolute;
+	width:600px;
+	height:400px;
+	font-family: lato;
+	font-size: 40px;
+	color: #0054a4;
+	padding:30px;
+	background-color: white;
+	display: inline;
+	right:50px;
+	top:50px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+#history_title{
+	width: 150px;
+	font-family: lato;
+	font-size: 40px;
+	color: #0054a4;
+	padding:30px;
+	margin-left: 50px;
+	margin-top: 50px;
+	background-color: white;
+}
+.history_cover{
+	position: relative;
+	width:100%;
+	height:80%;
+	background-size:cover;
+	background-attachment: fixed;
+	background-image: url("../img/hart_background6.jpg");
+	overflow: hidden;
+}
+.about_details{
+	width: 100%;
+	overflow-x: hidden;
+	text-align: center;
+}
+.about_details > div{
+	width: 80%;
+	font-family: lato;
+	font-size: 20px;
+	margin: auto;
+	color: #0054a4;
+	padding:40px;
+}
+.about_text{
+	width: 600px;
+	font-family: lato;
+	font-size: 25px;
+	color:white;
+	left:50%;
+	top:50%;
+	position: absolute;
+	margin-left: -320px;
+	margin-top: -70px;
+	background-color: rgba(0,84,164,0.5);
+	padding: 20px;
+}
+.about_cover{
+	position: relative;
+	width: 100%;
+	height:75%;
+	background-size: cover;
+	background-image: url('../img/hart_background5.jpg');
+	background-attachment: fixed;
+}
+#address{
+	float: left;
+	margin: 15px;
+	margin-left: 50px;
+	font-size: 15px;
+	color:white;
+	font-family: lato;
+}
+.learn_more_text{
+	top:76%;
+	padding: 10px;
+	background-color: rgba(255,255,255,1);
+	color: #0054a4;
+	position: fixed;
+	right:142px;
+	font-family: lato;
+	z-index: 100;
+
+}
+.learn_more{
+/*	padding: 20px;
+*/	width: 50px;
+	height:50px;
+	overflow: hidden;
+	background-color: rgba(255,255,255,1);
+	color: #0054a4;
+	position: fixed;
+	top:74%;
+	padding: 10px;
+	font-family: lato;
+	right:234px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 100;
+
+}
+.learn_more > img {
+	width:40px;
+	top:76%;
+	margin-top: 8px;
+/*	margin-left: 20px;
+	padding-top: 30px;*/
+	display: inline-block;
+}
+
+.short_description{
+	position: absolute;
+	width: 400px;
+	background-color: rgba(255,255,255,1);
+	color: #0054a4;
+	font-family: lato;
+	font-size:16px;
+	text-outline: 2px 2px #ff0000;
+	padding: 30px;
+	right:30px;
+	top:45%;
+	margin-top: -190px
+}
+#nav{
+	width: 100%;
+	position: fixed;
+	height:8%;
+	background-color: #0054a4;
+	top:0;
+	z-index:100;
+}
+#nav > ul {
+	float: right;
+	margin-right: 50px;
+	bottom:0;
+}
+#nav > ul > li {
+	list-style-type: none;
+	display: inline-block;
+	color:white;
+	font-family: Lato;
+	cursor: pointer;
+	margin-right: 20px;
+}
+#nav > ul > li:hover {
+	color:rgba(0,0,0,0.5);
+
+}
+#nav > ul > li > a{
+	color:white;
+	font-family: Lato;
+	cursor: pointer;
+	text-decoration: none;
+}
+#nav > ul > li > a:hover{
+	color:rgba(0,0,0,0.5);
+
+}
+
+#hamburger{
+	display: none;
+}
+#hamburger > img{
+	display: none;
+}
+#hamburger_options{
+	display: none;
+}
+
+#downarrow{
+	display: block;
+	float: right;
+	cursor: pointer;
+	margin-right: 30px;
+	margin-top:2%;
+	display: none;
+
+}
+#downarrow > img{
+	display: none;
+}
+#logo{
+	position: absolute;
+	top:50%;
+	left:5%;
+	margin-top: -190px;
+	padding:20px;
+}
+#logo > img {
+	width:400px;
+
+}
+#box1{
+	width:100%;
+	height:100%;
+	background-image: url('../img/hart_background2.png');
+	background-size:cover;
+	background-position: 0px -100px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+#box2{
+	width:100%;
+	height:100%;
+	background-image: url('../img/hart_background4.jpg');
+	background-size:cover;
+	background-position: 0px -100px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+/*	border-bottom: 5px solid #0054a4;
+*/
+}
+#box3{
+	width:100%;
+	height:100%;
+	background-image: url('../img/hart_background3.jpg');
+	background-size:cover;
+	background-position: 0px -100px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+/*	border-bottom: 5px solid #0054a4;
+*/
+}
+#box3 > .boxtitle{
+	width:100px;
+	font-family: lato;
+	font-size: 35px;
+	color:#0054a4;
+	padding:20px;
+	top:20%;
+	position: absolute;
+	left:10%;
+	background-color: rgba(255,255,255,1);
+}
+
+#box3 > .boxinfo{
+	width:600px;
+	font-family: lato;
+	font-size: 20px;
+	color:#0054a4;
+	padding:20px;
+	top:40%;
+	position: absolute;
+	left:10%;
+	background-color: rgba(255,255,255,1);
+
+}
+#box2 > .boxtitle{
+	width:400px;
+	font-family: lato;
+	font-size: 35px;
+	color:#0054a4;
+	padding:20px;
+	top:20%;
+	position: absolute;
+	left:10%;
+	background-color: rgba(255,255,255,1);
+}
+
+#box2 > .boxinfo{
+	width:600px;
+	font-family: lato;
+	font-size: 20px;
+	color:#0054a4;
+	padding:20px;
+	top:40%;
+	position: absolute;
+	left:10%;
+	background-color: rgba(255,255,255,1);
+
+}
+.short_description_wide{
+	display: none;
+}
+
+#footer{
+	width: 100%;
+	height: 50px;
+	background-color:#0054a4; 
+	overflow: hidden;
+	position: absolute;
+	bottom: 
+}
+#footer > ul{
+	float: right;
+	margin-right: 50px;
+}
+#footer > ul > li{
+	display: inline;
+}
+#footer > ul > li > img{
+	width: 20px;
+}
+#market_cover{
+	display: none;
+}
+#market_list_wide{
+	display: none;
+}
+#communityIntro2{
+	right: 5%;
+	float: right;
+	padding: 20px;
+	background-color: #0054a4;
+	color: white;
+	font-family: lato;
+	font-size: 45px;
+	margin: 50px;
+	margin-right: 5%;
+}
+
+}
+@media handheld,screen and (max-width: 1000px) {
+/*
+	Tablets, phones, etc
+*/
+#communityIntro2{
+
+
+	padding: 20px;
+	background-color: #0054a4;
+	color: white;
+	font-family: lato;
+	font-size: 25px;
+	width:80%;
+	margin:auto;
+	margin-top: 50px;
+}
+
+#communitySubIntro{
+	padding:20px;
+	color:#0054a4;
+	background-color: white;
+	font-size: 15px;
+	width:60%;
+	font-size: 15px;
+	font-family: lato;
+	margin:auto;
+}
+#communitysubIntro2{
+	padding:20px;
+	color:#0054a4;
+	background-color: white;
+	font-size: 15px;
+	width:80%;
+	font-size: 15px;
+	font-family: lato;
+	margin:auto;
+	margin-top: 20px;
+}
+#communitySubIntro{
+	padding:20px;
+	color:#0054a4;
+	background-color: white;
+	font-size: 15px;
+	width:80%;
+	font-size: 15px;
+	font-family: lato;
+	margin:auto;
+	margin-top: 20px;
+	
+}
+#communityIntro{
+	text-align: left;
+	margin-top: 8%;
+}
+#communityIntro > div{
+	padding:20px;
+	color:#0054a4;
+	background-color: white;
+	font-size: 15px;
+	width:80%;
+	font-size: 25px;
+	font-family: lato;
+	margin:auto;
+	margin-top: 20px;
+
+}
+#communityText{
+
+	position: relative;
+	padding: 20px;
+	background-color: #0054a4;
+	color: white;
+	width:400px;
+
+	font-size: 25px;
+	font-family: lato;
+	margin:auto;
+	margin-top:80px;
+	text-align: center;
+}
+#communitywrap{
+	width:100%;
+	height:100%;
+	background-color: white;
+	border-top:5px solid #0054a4;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -100px 0px;
+	position: relative;
+	background-image: url("../img/hart_background10.jpg");
+	background-attachment: fixed;
+	overflow-y:scroll;
+}
+#quality_right{
+	width:80%;
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	left:5%;
+	top:60%;
+	background-color:white; 
+	font-size: 16px;
+}
+#quality_right > h3{
+	font-size:25px;
+	margin-bottom:20px;
+	margin-top:5px;
+}
+#quality_haacp{
+	width:80%;
+	margin:auto;
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	left:5%;
+	top:30%;
+	position: absolute;
+	background-color:white; 
+	font-size: 15px;
+}
+#quality_haacp > h3{
+	font-size:25px;
+	margin-bottom:20px;
+	margin-top:5px;
+}
+#qualitySub2{
+	width:100%;
+	height:160%;
+	background-color: white;
+	border-top:5px solid #0054a4;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	background-image: url("../img/hart_background9.jpg");
+
+}
+#innerContainer{
+	font-family: lato;
+	color:#0054a4;
+
+	background-color:white; 
+	font-size: 15px;
+	width: 80%;
+	margin: auto;
+}
+#innerTitle{
+	padding:20px;
+	padding-top:40px;
+	font-family: lato;
+	color:#0054a4;
+	background-color:white; 
+	font-size: 35px;
+	width: 100%;
+	text-align: center;
+}
+#innerTitle2{
+	padding:20px;
+	padding-top:0px;
+	font-family: lato;
+	color:#0054a4;
+	background-color:white; 
+	font-size: 35px;
+	width: 100%;
+	margin-top: -20px;
+	text-align: center;
+}
+#qualityWrap{
+	width:100%;
+	height:100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../img/hart_background8.jpg");
+}
+#qualitySub{
+	width:100%;
+	height:300px;
+	background-color: white;
+	position: relative;
+	border-top:5px solid #0054a4;
+}
+#qualityTitle{
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	left:5%;
+	top:20%;
+	background-color:white; 
+	font-size: 35px;
+}
+#qualitySubTitle{
+	width:80%;
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	left:5%;
+	top:40%;
+	background-color:white; 
+	font-size: 16px;
+}
+
+#qualitySubTitle2{
+	width:80%;
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	left:5%;
+	top:10%;
+	background-color:white; 
+	font-size: 16px;
+}
+
+#qualitySubContainer{
+	width:80%;
+	padding:20px;
+	font-family: lato;
+	color:#0054a4;
+	position: absolute;
+	left:5%;
+	top: 60%;
+	background-color:white; 
+	font-size: 13px;
+}
+#market_list_wide > ul > li > div{
+	width:100%;
+	font-size: 12px;
+}
+#market_list_wide > ul > li{
+	cursor:pointer;
+	margin-top:40px;
+}
+#market_list_wide > ul{
+	padding:10px;
+	list-style-type: none;
+}
+
+#market_list_wide{
+	width:90%;
+	font-family: lato;
+	color: #0054a4;
+	margin: auto;
+	padding-bottom: 10px;
+}
+#markets_title{
+	width:300px;
+	text-align: center;
+	font-family: lato;
+	font-size: 25px;
+	color: white;
+	padding:20px;
+	background-color: #0054a4;
+	margin:auto;
+	margin-top: 50px;
+}
+#market_list{
+	display: none;
+}
+#product_list_wide{
+	width:95%;
+font-family: lato;
+	color: #0054a4;
+	margin: auto;
+	padding-top: 10px;
+}
+#product_list_wide > ul{
+
+}
+#product_title{
+	width:300px;
+	text-align: center;
+	font-family: lato;
+	font-size: 25px;
+	color: white;
+	padding:20px;
+	background-color: #0054a4;
+	margin:auto;
+	margin-top: 100px;
+}
+#product_list{
+	display: none;
+}
+#product_cover{
+	position: relative;
+	width:100%;
+	height:50%;
+	background-size:cover;
+	background-position: 0px 0px;
+	background-image: url("../img/hart_background7.jpg");
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+#history_wrap_wide{
+	width:100%;
+	color: #0054a4;
+	background-color: white;
+	text-align: center;
+	padding-bottom: 30px;
+}
+#history_wrap > div{
+	width:80%;
+	margin:auto;
+	font-size: 17px;
+	text-align: left;
+	margin-top: 30px;
+}
+#history_wrap_wide > div{
+	width:100%;
+	font-family: lato;
+	font-size: 40px;
+	color: #0054a4;
+	background-color: white;
+	display: inline;
+
+}
+#history_wrap{
+	display: none;
+}
+#history_title{
+	width: 150px;
+	font-family: lato;
+	font-size: 40px;
+	color: #0054a4;
+	padding:30px;
+	margin:auto;
+	margin-top: 50px;
+	background-color: white;
+}
+.history_cover{
+	width:100%;
+	height:40%;
+	background-size:cover;
+	background-attachment: fixed;
+	background-image: url("../img/hart_background6.jpg");
+	overflow: hidden;
+}
+.about_details{
+	width: 100%;
+	overflow-x: hidden;
+	text-align: center;
+}
+.about_details > div{
+	width: 80%;
+	font-family: lato;
+	font-size: 20px;
+	margin: auto;
+	color: #0054a4;
+	padding:40px;
+}
+.about_text{
+	width: 300px;
+	font-family: lato;
+	font-size: 25px;
+	color:white;
+	left:50%;
+	top:50%;
+	margin: auto;
+	margin-top: 130px;
+	background-color: rgba(0,84,164,0.5);
+	padding: 20px;
+}
+.about_cover{
+	width: 100%;
+	overflow: hidden;
+	height:75%;
+	background-size: cover;
+	background-image: url('../img/hart_background5.jpg');
+}
+#footer > ul{
+	float: right;
+	margin-right: 50px;
+	bottom:0;
+}
+#footer > ul > li{
+	display: inline;
+}
+#footer > ul > li > img{
+	width: 20px;
+}
+#footer{
+	width: 100%;
+	height: 50px;
+	background-color:#0054a4; 
+	position: absolute;
+	bottom: 
+}
+
+#box3{
+	width:100%;
+	height:70%;
+	background-image: url('../img/hart_background3.jpg');
+	background-size:cover;
+	background-position: 0px -0px;
+	background-repeat: no-repeat;
+	position: relative;
+/*	border-bottom: 5px solid #0054a4;
+*/
+}
+#box3 > .boxtitle{
+	width:280px;
+	font-family: lato;
+	font-size: 25px;
+	color:#0054a4;
+	padding:20px;
+	top:10%;
+	position: relative;
+	margin:auto;
+	background-color: rgba(255,255,255,1);
+}
+
+#box3 > .boxinfo{
+	width:600px;
+	font-family: lato;
+	font-size: 20px;
+	color:#0054a4;
+	padding:20px;
+	top:40%;
+	position: absolute;
+	display: none;
+	left:10%;
+	background-color: rgba(255,255,255,1);
+
+}
+
+.learn_more > img {
+	width:40px;
+	top:76%;
+	margin-top: 8px;
+/*	margin-left: 20px;
+	padding-top: 30px;*/
+	display: inline-block;
+}
+.learn_more_text{
+	display: none;
+}
+.learn_more{
+/*	padding: 20px;
+*/	width: 50px;
+	height:50px;
+	overflow: hidden;
+	background-color: rgba(255,255,255,0.8);
+	color: #0054a4;
+	
+	position: absolute;
+	top:54%;
+	padding: 10px;
+	font-family: lato;
+	left:50%;
+	margin-left:-25px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+
+}
+#logo > img {
+	width:400px;
+
+}
+#box1 > .short_description{
+	width:100%;
+	overflow: hidden;
+	margin:auto;
+	font-family: lato;
+	font-size: 20px;
+	color:#0054a4;
+	top:80%;
+	position: relative;
+	margin: auto;
+	background-color: rgba(255,255,255,1);
+	display: none;
+}
+.short_description_wide{
+	width:100%;
+	overflow: hidden;
+	margin:auto;
+	font-family: lato;
+	font-size: 20px;
+	color:#0054a4;
+	position: relative;
+	margin: auto;
+	background-color: rgba(255,255,255,1);
+	display: block;
+	margin-top: -150px;
+
+}
+.short_description_wide > div{
+	width: 90%;
+	margin:auto;
+	text-align: left;
+	padding: 10px;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+.short_description > div{
+	width: 90%;
+	text-align: left;
+	padding: 30px;
+
+}
+#box1{
+	width:100%;
+	height:100%;
+	background-image: url('../img/hart_background2.png');
+	background-size:cover;
+	background-position: 0px 0px;
+	background-attachment: fixed;
+/*	border-bottom: 5px solid #0054a4;
+*/
+}
+#box2{
+	width:100%;
+	height:60%;
+	background-image: url('../img/hart_background4.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+/*	border-bottom: 5px solid #0054a4;
+*/
+}
+#box2 > .boxtitle{
+	width:280px;
+	font-family: lato;
+	font-size: 25px;
+	color:#0054a4;
+	padding:20px;
+	top:10%;
+	position: relative;
+	margin:auto;
+	background-color: rgba(255,255,255,1);
+}
+#box2 > .boxinfo{
+	width:600px;
+	font-family: lato;
+	font-size: 20px;
+	color:#0054a4;
+	padding:20px;
+	top:80%;
+	position: relative;
+	margin: auto;
+	background-color: rgba(255,255,255,1);
+	display: none;
+
+}
+
+#logo{
+	width: 100%;
+	margin-top: 150px;
+	text-align:center;
+	position: absolute;
+}	
+#logo > img {
+	margin:auto;
+
+	width:300px;
+
+}
+#nav{
+	width: 100%;
+	position: fixed;
+	height:8%;
+	background-color: #0054a4;
+	top:0;
+	z-index:100;
+}
+#nav > ul {
+	float: right;
+	margin-right: 50px;
+	display: none;
+}
+#nav > ul > li {
+	list-style-type: none;
+	display: inline-block;
+	color:white;
+	font-family: Lato;
+	cursor: pointer;
+}
+#nav > ul > li:hover {
+	color:rgba(0,0,0,0.5);
+
+}
+#hamburger{
+	display: block;
+	float: right;
+	cursor: pointer;
+	margin-right: 30px;
+	margin-top:1%;
+}
+#hamburger_options{
+float: right;
+margin-top: 50px;
+cursor: pointer;
+position: absolute;
+right: 0px;
+background-color: #0054a4;
+height:0px;
+overflow: hidden;
+
+}
+#hamburger_options > div{
+	width:100%;
+	font-family: lato;
+	padding:10px;
+	color:white;
+	text-align: left;
+}
+#hamburger > img{
+	width:40px;
+}
+#downarrow{
+	display: block;
+	float: right;
+	cursor: pointer;
+	margin-right: 30px;
+	margin-top:2%;
+	display: none;
+
+}
+#downarrow > div{
+	width:100%;
+	font-family: lato;
+	padding:10px;
+	color:white;
+	text-align: left;
+	display: none;
+}
+#downarrow > img{
+	width:40px;
+}
+#address{
+	float: left;
+	margin: 18px;
+	margin-left: 10px;
+	font-size: 10px;
+	color:white;
+	font-family: lato;
+}
+
+}
+
+/*
+	End media queries
+*/
+
+#top{
+	width:100%;
+	height:100%;
+	background-image: url('../img/hart_background2.png');
+	background-size:cover;
+	background-position: 0px -100px;
+	background-attachment: fixed;
+}
+#top2{
+	width:100%;
+	height:100%;
+	border-top:10px solid white;
+	background-image: url('../img/hart_background4.jpg');
+	background-size:cover;
+	background-position: 0px -100px;
+	background-attachment: fixed;
+}
+#top3{
+	width:100%;
+	height:100%;
+	border-top:10px solid white;
+	background-image: url('../img/hart_background3.jpg');
+	background-size:cover;
+	background-position: 0px -100px;
+	background-attachment: fixed;
+}
+
+
+
+#product_box{
+	position: absolute;
+	width:350px;
+	height:450px;
+	background-color: rgba(255,255,255,0.7);
+	top:500px;
+	right:100px;
+}
+.wrapper{
+	width:100%;
+	height:100%;
+
+}
+::-webkit-scrollbar { 
+    display: none; 
+}

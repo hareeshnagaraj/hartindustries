@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <title>About</title>
+
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+        // disable_scroll();
+    		
+        $("#hamburger").click(function(){
+
+            $("#hamburger_options").animate({ "height": "250px" }, 200 );
+            $("#hamburger").hide();
+            $("#downarrow").show();
+        });
+
+         $("#downarrow").click(function(){
+            $("#hamburger_options").animate({ "height": "0px" }, 200 );
+            $("#hamburger").show();
+            $("#downarrow").hide();
+        });
+
+
+    });
+    $(window).scroll(function(){
+    	var topdist = $(window).scrollTop();
+    	if(topdist < 100){
+
+
+    		$("#short_description").show();
+    	}
+    	if(topdist > 100){
+    		
+    		// $("#short_description").hide();
+    	}
+    	if(topdist > 600){
+
+
+    	}
+    });
+
+    </script>
+
+</head>
+<body>
+<div id="nav">
+    <div id="whitelogo">
+        <img src="img/hartlogo_small_white.png" />
+    </div>
+    <ul>
+        <li><a href="index.html" >HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="solutions.html">SOLUTIONS</a></li>
+        <li><a href="quality.html">QUALITY</a></li>
+        <li><a href="community.html">COMMUNITY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <div id="hamburger"><img src="img/hamburger.png"/></div>
+    <div id="downarrow"><img src="img/arrow_up.png"/></div>
+
+    <div id="hamburger_options">
+        <div>HOME</div>   
+        <div>ABOUT</div>   
+        <div>SOLUTIONS</div>   
+        <div>QUALITY</div>   
+        <div>COMMUNITY</div> 
+        <div>CONTACT</div>     
+    </div>
+</div>
+<div class="about_cover">
+    <div class="about_text">We strive through our innovative thinking and improved efficiencies to reach our goals of continued growth and improved profitability.</div>
+</div>
+<div class="divider"></div>
+<div class="about_details">
+    <div>Hart Industries is continually driven to produce and effectively supply specialty packaging products to a variety of key markets that require a high standard of quality with the emphasis on consistency and reliability.</div>
+</div>
+<div class="divider"></div>
+
+<div class="history_cover">
+    <div id="history_title">History</div>
+    <div id="history_wrap">
+        <div>In 1983 Hart acquired its first wide web, four color printing press. This allowed Hart to print label end tapes for the manufacturers of gypsum board. The business continued to grow and expanded into other new markets which required the acquisition of faster, more efficient printing and slitting equipment. As the business diversified Hart Industries was relocated to Owings Mills, MD in 1989.<br><br>In 2005, at a customer's request, we were asked to explore the feasibility of producing specialty coated papers. Research into the wax coated market uncovered an opportunity for a supplier who was committed to great customer service and willing to work with the customer to improve the customer's processes. Since then Hart has identified various sub-markets within the coated market that seem to fit our strengths. These sub-markets include cubed and twisted candy and gum wrappers, cough drop wrappers, throat lozenge wrappers, and waxed sheets with improved grease hold out for some of our dairy customers. The decision to add coated products to our offerings required custom designed and engineered coaters placed in line with our current printing presses. This allows Hart to efficiently process high quality graphics with a variety of coatings.<br><br>Hart Industries has now grown into a manufacturing enterprise focused on specialty paper and coated packaging products for numerous markets. Our customers are active in the building industry, butter and margarine market, candy and confectionery markets, personal hygiene market, and enveloped tea market. We currently sell to some of the largest consumer products and food companies in the world.<br><br>Today we have the capability to print, slit, and coat material for a variety of different packaging applications. We continue to pride ourselves on the quality and consistency of our products, our customer service, our innovative approach to helping solve our customers' packaging problems, and the stability we bring to our customers' supply chain. Our commitment to reliability, innovation, and responsiveness has made us a valued, long term supplier to our customers.<br><br>Although this is a story of growth and change we remain committed to our founding principle - to meet our customers' needs and exceed their expectations.</div>
+    </div>
+</div>
+<div id="history_wrap_wide">
+    <div id="history_wrap">
+        <div>In 1983 Hart acquired its first wide web, four color printing press. This allowed Hart to print label end tapes for the manufacturers of gypsum board. The business continued to grow and expanded into other new markets which required the acquisition of faster, more efficient printing and slitting equipment. As the business diversified Hart Industries was relocated to Owings Mills, MD in 1989.<br><br>In 2005, at a customer's request, we were asked to explore the feasibility of producing specialty coated papers. Research into the wax coated market uncovered an opportunity for a supplier who was committed to great customer service and willing to work with the customer to improve the customer's processes. Since then Hart has identified various sub-markets within the coated market that seem to fit our strengths. These sub-markets include cubed and twisted candy and gum wrappers, cough drop wrappers, throat lozenge wrappers, and waxed sheets with improved grease hold out for some of our dairy customers. The decision to add coated products to our offerings required custom designed and engineered coaters placed in line with our current printing presses. This allows Hart to efficiently process high quality graphics with a variety of coatings.<br><br>Hart Industries has now grown into a manufacturing enterprise focused on specialty paper and coated packaging products for numerous markets. Our customers are active in the building industry, butter and margarine market, candy and confectionery markets, personal hygiene market, and enveloped tea market. We currently sell to some of the largest consumer products and food companies in the world.<br><br>Today we have the capability to print, slit, and coat material for a variety of different packaging applications. We continue to pride ourselves on the quality and consistency of our products, our customer service, our innovative approach to helping solve our customers' packaging problems, and the stability we bring to our customers' supply chain. Our commitment to reliability, innovation, and responsiveness has made us a valued, long term supplier to our customers.<br><br>Although this is a story of growth and change we remain committed to our founding principle - to meet our customers' needs and exceed their expectations.</div>
+    </div>
+</div>
+
+<div id="footer">
+    <div id="address">11412 Cronridge Drive, Owings Mills MD 2117</div>
+    <ul>
+        <li><img src="img/linkedinwhite.png" /></li>
+        <li><img src="img/fbwhite.png" /></li>
+        <li><img src="img/twitterwhite.png" /></li>
+
+    </ul>
+</div>
+</body>
+</html>

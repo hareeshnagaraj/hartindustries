@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <title>Community</title>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+        // disable_scroll();
+    		
+        $("#hamburger").click(function(){
+
+            $("#hamburger_options").animate({ "height": "250px" }, 200 );
+            $("#hamburger").hide();
+            $("#downarrow").show();
+        });
+
+         $("#downarrow").click(function(){
+            $("#hamburger_options").animate({ "height": "0px" }, 200 );
+            $("#hamburger").show();
+            $("#downarrow").hide();
+        });
+
+    });
+    $(window).scroll(function(){
+    	var topdist = $(window).scrollTop();
+    	if(topdist < 100){
+    		$("#short_description").show();
+    	}
+    	if(topdist > 100){
+    		// $("#short_description").hide();
+    	}
+    	if(topdist > 600){
+
+
+    	}
+    });
+
+    </script>
+
+</head>
+<body>
+<div id="nav">
+    <div id="whitelogo">
+        <img src="img/hartlogo_small_white.png" />
+    </div>
+	<ul>
+		<li><a href="index.html" >HOME</a></li>
+		<li><a href="about.html">ABOUT</a></li>
+		<li><a href="solutions.html">SOLUTIONS</a></li>
+		<li><a href="quality.html">QUALITY</a></li>
+		<li><a href="community.html">COMMUNITY</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+	</ul>
+    <div id="hamburger"><img src="img/hamburger.png"/></div>
+    <div id="downarrow"><img src="img/arrow_up.png"/></div>
+
+	<div id="hamburger_options">
+        <div>HOME</div>   
+        <div>ABOUT</div>   
+        <div>SOLUTIONS</div>   
+        <div>QUALITY</div>   
+        <div>COMMUNITY</div> 
+        <div>CONTACT</div>     
+    </div>
+</div>
+<div id="communitywrap">
+    <div id="inner" style="width:100%;height:110%;">
+        <div id="communityText">Environmental Efforts</div>
+        <div id="communityIntro"><div>Hart Industries' commitment to protecting our environment and the bountiful natural resources of the world we live in is demonstrated through our pledge to purchase recycled materials whenever possible within the confines of our customers' and regulators' specifications.</div></div>
+        <div id="communitySubIntro">All inks used in our processes are non-toxic water based inks.<br><br>All paper and film waste is recycled to reduce our environmental footprint.<br><br>In 2011, Hart Industries invested in a new state of the art lighting system for the entire facility that features high efficiency fluorescent bulbs, compact fluorescent bulbs, and motion sensors for the reduction of energy consumption.</div>
+        <div id="communityIntro2">Community Efforts</div>
+        <div id="communitysubIntro2">Locally, Hart sponsors and supports youth athletic teams, community sponsored fairs, and our neighborhood volunteer fire department.</div>
+    </div>
+</div>
+<div id="footer">
+    <div id="address">11412 Cronridge Drive, Owings Mills MD 2117</div>
+    <ul>
+        <li><img src="img/linkedinwhite.png" /></li>
+        <li><img src="img/fbwhite.png" /></li>
+        <li><img src="img/twitterwhite.png" /></li>
+
+    </ul>
+</div>
+</body>
+</html>
