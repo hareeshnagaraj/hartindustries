@@ -34,36 +34,37 @@
             $("#product_list").fadeIn(1000);
          });
          $("#butter").hover(function(){
-            $("#butter > div ").show();
+
+            $("#butter > div").animate({"height":"100px"},300);
          });
          $("#butter").mouseleave(function(){
             
-            $("#butter > div").hide();
+            $("#butter > div").animate({"height":"0px"},300);
 
          });
          $("#candy").hover(function(){
-            $("#candy > div ").show();
+            $("#candy > div").animate({"height":"140px"},300);
          });
          $("#candy").mouseleave(function(){
-            $("#candy > div").hide();
+            $("#candy > div").animate({"height":"0px"},300);
          });
          $("#tea").hover(function(){
-            $("#tea > div ").show();
+            $("#tea > div").animate({"height":"100px"},300);
          });
          $("#tea").mouseleave(function(){
-            $("#tea > div").hide();
+            $("#tea > div").animate({"height":"0px"},300);
          });
          $("#specialty").hover(function(){
-            $("#specialty > div ").show();
+            $("#specialty > div").animate({"height":"100px"},300);
          });
          $("#specialty").mouseleave(function(){
-            $("#specialty > div").hide();
+            $("#specialty > div").animate({"height":"0px"},300);
          });
          $("#building").hover(function(){
-            $("#building > div ").show();
+            $("#building > div").animate({"height":"100px"},300);
          });
          $("#building").mouseleave(function(){
-            $("#building > div").hide();
+            $("#building > div").animate({"height":"0px"},300);
          });
          $(window).on('resize', function(){
               var win = $(this); //this = window

@@ -2,119 +2,13 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
+    <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
 
     <title>Hart Industries</title>
 
     <script type="text/javascript">
-/*
-    var keys = [37, 38, 39, 40];
-
-    var i = 0;
-    var j = 0;
-
-    function preventDefault(e) {
-      e = e || window.event;
-      if (e.preventDefault)
-          e.preventDefault();
-      e.returnValue = false;  
-    }
-
-    function keydown(e) {
-        for (var i = keys.length; i--;) {
-            if (e.keyCode === keys[i]) {
-                preventDefault(e);
-                return;
-            }
-        }
-    }
-
-    function wheel(e) {
-      console.log("in wheel");
-      console.log(e.wheelDelta);
-    // setTimeout(function(){
-    //     console.log("in wheel");
-    // }, 3000);
-      if(e.wheelDelta < 0){
-          i++;
-          if(i > 150){
-            // window.alert('reached');
-            i = 0;
-            $('html, body').animate({
-                scrollTop: $(window).scrollTop() + 500
-            }, 500);
-          }
-      }
-      else{
-        j++;
-          if(j > 150){
-            // window.alert('reached');
-            j = 0;
-            $('html, body').animate({
-                scrollTop: $(window).scrollTop() - 500
-            }, 500);
-          }
-
-      }
-
-      preventDefault(e);
-      return;
-
-    }
-
-    function disable_scroll() {
-      if (window.addEventListener) {
-          window.addEventListener('DOMMouseScroll', wheel, false);
-      }
-      window.onmousewheel = document.onmousewheel = wheel;
-      document.onkeydown = keydown;
-    }
-
-    function enable_scroll() {
-        if (window.removeEventListener) {
-            window.removeEventListener('DOMMouseScroll', wheel, false);
-        }
-        window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
-    }*/
-
-
-
-    // var distance = 0;
-    // if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, true);
-    // window.onmousewheel = document.onmousewheel = wheel;
-
-    // function wheel(event) {
-    // var delta = 0;
-    // if (event.wheelDelta) {
-    //     delta = event.wheelDelta / 100;
-    //     console.log("wheelDelta" +  delta);
-
-    // }
-    // else if (event.detail) {
-    //     delta = -event.detail / 3;
-    //     console.log("detail" +  delta);
-    // }
-    // handle(delta);
-    // if (event.preventDefault){
-    //     event.preventDefault();
-    //     event.returnValue = false;
-    // }
-    // }
-    
-
-    // function handle(delta) {
-    // delta = -1;
-    // var time = 1000;
-    // distance = 1000;
-    // console.log(distance * delta);
-
-    //     $('html, body').animate({
-    //         scrollTop: $(window).scrollTop() - (distance * delta)
-    //     }, time );
-    // }
-
 
     $(document).ready(function(){
 
@@ -139,23 +33,30 @@
                 go_id = "#box2";
             }
             if( a == 3){
-                go_id = "#footer";
-                $("#learnarrow").rotate({ animateTo:180},200)
+                go_id = "#box3";
+
             }
             if( a == 4){
 
-                go_id = "#box1";
-                $("#learnarrow").rotate({ animateTo:0},200)
-                a = 1;
+                go_id = "#box4";;
 
             }
+            if( a == 5){
+                go_id = "#box5";;
+                $("#learnarrow").rotate({ animateTo:0},200)
+            }
 
-             $('html, body').animate({
+            console.log(go_id);
+
+            $('html, body').animate({
                 scrollTop: $(go_id).offset().top
             }, 500);
 
-            if(a!=4){
+            if(a!=5){
                 a++;
+            }
+            else{
+                a = 1;
             }
             
          });
@@ -169,12 +70,10 @@
     	var topdist = $(window).scrollTop();
     	if(topdist < 100){
 
-
     		$("#short_description").show();
     	}
     	if(topdist > 100){
     		
-    		// $("#short_description").hide();
     	}
     	if(topdist > 600){
 
@@ -254,6 +153,34 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
     </div>
 </div>
+
+<div class="divider"></div>
+
+<div id="box4" class="frontBox" style="background-image:url('img/hart_background11.jpg')">
+<!--     <div class="short_description">
+    <div> -->
+    <div class="boxtitle" style="width:300px;">
+        Feminine Hygiene
+    </div>
+    <div class="boxinfo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div id="box5" class="frontBox" style="background-image:url('img/hart_background12.jpg')">
+<!--     <div class="short_description">
+    <div> -->
+    <div class="boxtitle" style="width:300px;">
+        Construction
+    </div>
+    <div class="boxinfo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    </div>
+</div>
+
+
 <div class="short_description_wide" style="margin-top:-150px;">
 <div>    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
 </div>

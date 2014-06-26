@@ -22,7 +22,7 @@ html,body{
 	margin:15px;
 }
 #contactbox{
-width: 30%;
+width: 33%;
 height: 100%;
 margin: auto;
 background-color: white;
@@ -43,41 +43,45 @@ font-family: lato;
 	Desktops
 */
 #communitySubIntro{
-	padding:20px;
-	color:#0054a4;
+	padding: 20px;
+	color: #0054a4;
 	background-color: white;
 	font-size: 15px;
-	width:60%;
+	width: 40%;
 	font-size: 15px;
 	font-family: lato;
 	margin-top: 20px;
 	margin-left: 5%;
 }
 #communitysubIntro2{
-	padding:20px;
-	color:#0054a4;
-	background-color: white;
-	font-size: 15px;
-	width:60%;
-	font-size: 15px;
-	font-family: lato;
-	margin-top: 200px;
-	margin-left: 5%;
+padding: 20px;
+color: #0054a4;
+background-color: white;
+font-size: 15px;
+width: 36%;
+font-size: 15px;
+font-family: lato;
+margin-top: 225px;
+margin-left: 5%;
+position: absolute;
+top: 5px;
+right: 45px;
 }
 #communityIntro{
 	text-align: left;
 	margin-top: 18%;
 }
 #communityIntro > div{
-	padding:20px;
-	color:#0054a4;
+	padding: 20px;
+	color: #0054a4;
 	background-color: white;
 	font-size: 15px;
-	width:60%;
-	font-size: 25px;
+	width: 60%;
+	font-size: 18px;
 	font-family: lato;
 	margin-top: 20px;
 	margin-left: 5%;
+	width: 40%;
 }
 #communityText{
 
@@ -152,7 +156,7 @@ font-family: lato;
 	position: relative;
 	background-image: url("../img/hart_background10.jpg");
 	background-attachment: fixed;
-	overflow-y:scroll;
+	overflow:hidden;
 }
 #qualitySub{
 	width:100%;
@@ -273,13 +277,15 @@ font-family: lato;
 }
 #market_list > ul > li > div{
 	width:100%;
-	display:none;
+	height:0px;
+	overflow: hidden;
 	font-size: 12px;
 }
 #market_list > ul > li{
 	cursor:pointer;
 	margin-top:10px;
 }
+
 #market_list > ul{
 	padding:10px;
 	list-style-type: none;
@@ -334,18 +340,18 @@ font-family: lato;
 }
 .history_cover > #history_wrap{
 	position: absolute;
-	width:600px;
-	height:400px;
+	width: 600px;
+	height: 360px;
 	font-family: lato;
 	font-size: 40px;
 	color: #0054a4;
-	padding:30px;
+	padding: 30px;
 	background-color: white;
 	display: inline;
-	right:50px;
-	top:50px;
-	overflow-x:hidden;
-	overflow-y:scroll;
+	right: 50px;
+	top: 8px;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 #history_title{
 	width: 150px;
@@ -360,7 +366,7 @@ font-family: lato;
 .history_cover{
 	position: relative;
 	width:100%;
-	height:80%;
+	height:65%;
 	background-size:cover;
 	background-attachment: fixed;
 	background-image: url("../img/hart_background6.jpg");
@@ -585,6 +591,44 @@ font-family: lato;
 	background-color: rgba(255,255,255,1);
 
 }
+
+.frontBox{
+	width:100%;
+	height:100%;
+	background-image: url('../img/hart_background3.jpg');
+	background-size:cover;
+	background-position: 0px -100px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+/*	border-bottom: 5px solid #0054a4;
+*/
+}
+.frontBox > .boxtitle{
+	width:100px;
+	font-family: lato;
+	font-size: 35px;
+	color:#0054a4;
+	padding:20px;
+	top:20%;
+	position: absolute;
+	left:10%;
+	background-color: rgba(255,255,255,1);
+}
+
+.frontBox > .boxinfo{
+	width:600px;
+	font-family: lato;
+	font-size: 20px;
+	color:#0054a4;
+	padding:20px;
+	top:40%;
+	position: absolute;
+	left:10%;
+	background-color: rgba(255,255,255,1);
+
+}
+
 #box2 > .boxtitle{
 	width:400px;
 	font-family: lato;
@@ -645,8 +689,9 @@ font-family: lato;
 	color: white;
 	font-family: lato;
 	font-size: 45px;
-	margin: 50px;
 	margin-right: 5%;
+	position: absolute;
+	top: 14%;
 }
 
 }
