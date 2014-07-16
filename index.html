@@ -1,200 +1,92 @@
-<!DOCTYPE html>
+<!-- 
+
+New Index Page for Hart
+Aiming for a cleaner overall design that meshes with a modern aesthetic
+
+ -->
+
+ <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/newstyle.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
-
+    <script type="text/javascript" src="toggles.js"></script>
     <title>Hart Industries</title>
-
-    <script type="text/javascript">
-
-    $(document).ready(function(){
-
-        // disable_scroll();
-    		
-        $("#hamburger").click(function(){
-            $("#hamburger_options").animate({ "height": "250px" }, 200 );
-            $("#hamburger").hide();
-            $("#downarrow").show();
-        });
-
-         $("#downarrow").click(function(){
-            $("#hamburger_options").animate({ "height": "0px" }, 200 );
-            $("#hamburger").show();
-            $("#downarrow").hide();
-        });
-
-         var a = 2;
-         $("#learnarrow").click(function(){
-            var go_id = "#box"+a
-            if(a == 2){
-                go_id = "#box2";
-            }
-            if( a == 3){
-                go_id = "#box3";
-
-            }
-            if( a == 4){
-
-                go_id = "#box4";;
-
-            }
-            if( a == 5){
-                go_id = "#box5";;
-                $("#learnarrow").rotate({ animateTo:0},200)
-            }
-
-            console.log(go_id);
-
-            $('html, body').animate({
-                scrollTop: $(go_id).offset().top
-            }, 500);
-
-            if(a!=5){
-                a++;
-            }
-            else{
-                a = 1;
-            }
-            
-         });
-
-         $("#whitelogo").click(function(){
-            window.location = "index.html";
-         });
-
-    });
-    $(window).scroll(function(){
-    	var topdist = $(window).scrollTop();
-    	if(topdist < 100){
-
-    		$("#short_description").show();
-    	}
-    	if(topdist > 100){
-    		
-    	}
-    	if(topdist > 600){
-
-
-    	}
-    });
-
-    </script>
-
 </head>
 <body>
-<div id="nav">
-    <div id="whitelogo">
-        <img src="img/hartlogo_small_white.png" />
-    </div>
-    <ul>
-        <li><a href="index.html" >HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="solutions.html">SOLUTIONS</a></li>
-        <li><a href="quality.html">QUALITY</a></li>
-        <li><a href="community.html">SUSTAINABILITY & COMMUNITY</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-    </ul>
+<!-- navbar -->
+<div class="navBar">
+	<a href="index.html">
+		<img id="logo" src="img/hartlogo_small_white.png" />
+	</a>
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="about.html">ABOUT</a></li>
+		<li><a href="solutions.html">SOLUTIONS</a></li>
+		<li><a href="quality.html">QUALITY</a></li>
+		<li><a href="community.html">SUSTAINABILITY & COMMUNITY</a></li>
+		<li style="margin-right:50px;"><a href="">CONTACT</a></li>
+
+	</ul>
     <div id="hamburger"><img src="img/hamburger.png"/></div>
-    <div id="downarrow"><img src="img/arrow_up.png"/></div>
-
-    <div id="hamburger_options">
-        <div>HOME</div>   
-        <div>ABOUT</div>   
-        <div>SOLUTIONS</div>   
-        <div>QUALITY</div>   
-        <div>SUSTAINABILITY & COMMUNITY</div> 
-        <div>CONTACT</div>     
-    </div>
-</div>
-<div id="logo"><img id="logopic" src="img/hartlogo_blue.png" /></div>  
-<div id="box1">
-    <div class="short_description">
-    <div>Hart Industries has been a family owned and operated packaging material supplier since 1969. Exceptional customer service defines Hart Industries and has made us a long term supplier to some of the largest companies in the United States and abroad.<br><br>Hart Industries, Inc. is a premiere source for world class flexographic printing and converting located in a modern, hygienic, climate controlled facility in Owing's Mills MD. Hart Industries can improve your operations and bottom line with highly reliable consistency and quality packaging solutions.
-
-    </div>
-    </div>
-</div>
-
-<div class="short_description_wide">
-<div>Hart Industries has been providing quality packaging materials since 1969. We are located in a modern, hygienic, climate controlled facility in Owings Mills, Maryland.<br><br>Hart Industries, Inc. is your source for world class flexographic printing and converting for your packaging requirements. <br><br>Exceptional customer service defines Hart Industries and has made us a long term supplier to some of the largest companies both in the United States and abroad.<br><br>Let Hart Industries help you improve your operations and your bottom line with high quality, reliably consistent packaging solutions.
-</div>
-</div>
-
-<div class="learn_more_text">Learn more</div>
-<div class="learn_more" id="learnarrow"><img src="img/hart_down_arrow.png" /></div>
-
-<div class="divider"></div>
-<div id="box2">
-<!--     <div class="short_description">
-    <div> -->
-    <div class="boxtitle">
-        Candy and Confectionary
-    </div>
-    <div class="boxinfo">
-        Hart Industries currently serves the largest produces of candy and confectionary consumer products around the world. In this market we provide coated papers for gum wrappers (twist, cube, and stick), cough drops, throat lozenges, hard candy wrappers (twist and cube) as well as coated and uncoated layer board for support stock (U-board).
-    </div>
-</div>
-<div class="short_description_wide">
-<div>           Hart Industries currently serves the largest produces of candy and confectionary consumer products around the world. In this market we provide coated papers for gum wrappers (twist, cube, and stick), cough drops, throat lozenges, hard candy wrappers (twist and cube) as well as coated and uncoated layer board for support stock (U-board).
 
 </div>
+<!-- Modal for the Mobile Version of the site -->
+<div class="mobileModal">
+    <img id="closeMobileModal" src="img/hart_closebutton.png" />
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="about.html">ABOUT</a></li>
+		<li><a href="solutions.html">SOLUTIONS</a></li>
+		<li><a href="quality.html">QUALITY</a></li>
+		<li><a href="community.html">COMMUNITY</a></li>
+	</ul>
 </div>
 
-<div class="divider"></div>
-
-<div id="box3">
-<!--     <div class="short_description">
-    <div> -->
-    <div class="boxtitle">
-        Tea
-    </div>
-    <div class="boxinfo">
-        Hart Industries provides specialty packing in the tea industry in the form of tea envelopes to the largest consumer tea suppliers around the world. We incorporate the use of precession dye cutting to serve the tea industry with multiple styles of tea envelope.
-    </div>
+<!-- Container for the top, with picture -->
+<div class="topPic">
+	<div class="topPicOverlay">
+		<div class="topPicQuote">
+			"Exceptional customer service defines Hart Industries."
+		</div>
+	</div>
 </div>
-
-<div class="divider"></div>
-
-<div id="box4" class="frontBox" style="background-image:url('hartpics/pic6.jpeg');background-position:0px 0px;">
-<!--     <div class="short_description">
-    <div> -->
-    <div class="boxtitle" style="width:300px;">
-        Feminine Hygiene
-    </div>
-    <div class="boxinfo">
-        Though our focus on quality and reliability, Hart Industries currently serve the unique demands of the feminine hygiene industry with consistent packaging solution for their products. 
-    </div>
+<!--  Container for the bottom -->
+<div class="index_secondContainer">
+	<div class="index_secondContainer_card">
+		<div class="index_secondContainer_title">
+			Item A
+		</div>
+		<div class="index_secondContainer_descrip">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+		</div>
+	</div>
+	<div class="index_secondContainer_card">
+		<div class="index_secondContainer_title">
+			Item B
+		</div>
+		<div class="index_secondContainer_descrip">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+		</div>
+	</div>
+	<div class="index_secondContainer_card">
+		<div class="index_secondContainer_title">
+			Item C
+		</div>
+		<div class="index_secondContainer_descrip">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+		</div>
+	</div>
+	
+<!-- Footer -->
+<div class="hartfooter">
+	<div class="footerAddress">
+		11412 Cronridge Drive, Owings Mills MD 21117
+	</div>
+	<img src="img/haccp_white.png" alt="" class="haacp">
 </div>
-
-<div class="divider"></div>
-
-<div id="box5" class="frontBox" style="background-image:url('hartpics/pic8.jpeg');background-position:0px -500px;">
-<!--     <div class="short_description">
-    <div> -->
-    <div class="boxtitle" style="width:300px;">
-        Construction
-    </div>
-    <div class="boxinfo">
-        Hart Industries has been providing industrial packaging for the construction industry for over 25 years. We are a top supplier of gummed and un-gummed dry wall bundling end tape.
-    </div>
-</div>
-
-
-<div class="short_description_wide" style="margin-top:-150px;">
-<div>    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-</div>
-</div>
-
-<div id="footer">
-    <div id="address">11412 Cronridge Drive, Owings Mills MD 21117</div>
-    <ul>
-        <li><img style="width:55px;margin-top:-5px;" src="img/haccp_white.png" /></li>
-    </ul>
-    <div class="bottomtext">Professionals In Packaging</div>
 
 </div>
 </body>
-</html>

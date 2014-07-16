@@ -1,8 +1,8 @@
 html,body{
 	width:100%;
-	height:100%;
 	padding:0;
 	margin:0;
+	position: relative;
 }
 @media handheld,screen and (min-width: 1000px) {
 /*
@@ -14,7 +14,7 @@ Container for picture on index page, followed by overlay div
 */
 .topPic{
 	width:100%;
-	height:80%;
+	height: 600px;
 	background-size: cover;
 	background-position: 0px -100px;
 	background-repeat:no-repeat;
@@ -37,8 +37,10 @@ Container for picture on index page, followed by overlay div
 	text-align: center;
 }
 .index_secondContainer{
-	width:100%;
+	width: 100%;
 	text-align: center;
+	overflow: hidden;
+	height: 490px;
 }
 .index_secondContainer_card{
 	width:30%;
@@ -63,6 +65,71 @@ Container for picture on index page, followed by overlay div
 	float: left;
 	text-align: left;
 	margin-left: 20px;
+}
+/*
+CSS for the about pag
+*/
+.about_topPic{
+	width:100%;
+	height:400px;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-image: url('../2008pics/about_top.jpg');
+	overflow: hidden;
+
+}
+.about_topPicOverlay{
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.3);
+}
+.about_topPicTitle{
+	font-family: lato;
+	font-size: 25px;
+	width:60%;
+	color:  white;
+	float: left;
+	margin-left:5%;
+	margin-top:15%;
+}
+.about_secondContainer{
+	width:100%;
+	height:200px;
+	background-color: #0054a4;
+	overflow: hidden;
+	text-align: center;
+}
+.about_secondContainerText{
+	width:80%;
+	font-family: lato;
+	margin:auto;
+	color:white;
+	text-align: left;
+	font-size: 25px;
+	margin-top: 50px;
+	margin-left: 5%;
+}
+.about_thirdContainer{
+	width:100%;
+	padding-top:50px;
+	padding-bottom: 100px;
+}
+.about_thirdContainer_description{
+	width:80%;
+	margin-left:5%;
+	font-family: lato;
+	color:rgb(42,42,42);
+	font-size: 20px;
+
+}
+.about_thirdContainer_picture{
+	width:100%;
+	height:400px;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-image: url('../2008pics/about_middle.jpg');
+	overflow: hidden;
+	background-attachment: fixed;
 }
 /*
 CSS for the nav
@@ -119,22 +186,31 @@ CSS for the nav
 CSS for the footer
 */
 .hartfooter{
+	position: absolute;
 	width:100%;
 	bottom:0;
-	height:50px;
+	height:60px;
 	background-color: #0054a4;
+	overflow: hidden;
 }
 .footerAddress{
 	color:white;
 	float: left;
 	font-family: lato;
 	font-size: 15px;
-	margin:15px;
+	margin:25px;
 }
 .haacp{
 	width:55px;
 	float: right;
-	margin:15px;
+	margin:20px;
+}
+
+.mobileModal{
+	display: none;
+}
+#closeMobileModal{
+	display: none;
 }
 
 }
@@ -143,6 +219,70 @@ CSS for the footer
 	Mobile
 */
 
+/*
+CSS for the about pag
+*/
+.about_topPic{
+	width:100%;
+	height:400px;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-image: url('../2008pics/about_top.jpg');
+	overflow: hidden;
+	background-attachment: fixed;
+}
+.about_topPicOverlay{
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.3);
+}
+.about_topPicTitle{
+	font-family: lato;
+	font-size: 25px;
+	width: 90%;
+	color: white;
+	float: left;
+	margin-left: 5%;
+	margin-top: 30%;
+}
+.about_secondContainer{
+	width: 100%;
+	height: 459px;
+	background-color: #0054a4;
+	overflow: hidden;
+	text-align: center;
+}
+.about_secondContainerText{
+	width:80%;
+	font-family: lato;
+	margin:auto;
+	color:white;
+	text-align: left;
+	font-size: 25px;
+	margin-top: 50px;
+	margin-left: 5%;
+}
+.about_thirdContainer{
+	width:100%;
+	padding-top:50px;
+	padding-bottom: 100px;
+}
+.about_thirdContainer_description{
+	width:80%;
+	margin-left:5%;
+	font-family: lato;
+	color:rgb(42,42,42);
+	font-size: 15px;
+}
+.about_thirdContainer_picture{
+	width:100%;
+	height:0px;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-image: url('../2008pics/about_middle.jpg');
+	overflow: hidden;
+	background-attachment: fixed;
+}
 
 /*
 Container for picture on index page, followed by overlay div
@@ -172,6 +312,7 @@ Container for picture on index page, followed by overlay div
 .index_secondContainer{
 	width:100%;
 	text-align: center;
+	overflow: hidden;
 }
 .index_secondContainer_card{
 	width:100%;
@@ -195,6 +336,9 @@ Container for picture on index page, followed by overlay div
 	text-align: left;
 	margin-left: 20px;
 }
+/*
+CSS
+*/
 
 /*
 CSS for the nav
@@ -223,7 +367,73 @@ CSS for the nav
 width: 40px;
 margin-right: 20px;
 margin-top: 15px;
+cursor:pointer;
 }
 
+
+/*
+CSS for the footer
+*/
+.hartfooter{
+	width:100%;
+	bottom:0;
+	height:60px;
+	background-color: #0054a4;
+	overflow: hidden;
+}
+.footerAddress{
+	color:white;
+	float: left;
+	font-family: lato;
+	font-size: 10px;
+	margin:25px;
+}
+.haacp{
+	width:55px;
+	float: right;
+	margin:20px;
+	display: none;
+}
+
+
+
+/*
+Modal for the mobile version of the site
+*/
+.mobileModal{
+	position: fixed;
+	width: 80%;
+	overflow: hidden;
+	background-color: #0054a4;;
+	display: none;
+	left: 50%;
+	margin-left: -40%;
+	margin-top: 10%;
+	z-index: 1000;
+	padding-bottom: 50px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.mobileModal > ul{
+	list-style-type: none;
+	width:100%;
+}
+.mobileModal > ul > li{
+	width:100%;
+	padding-top: 30px;
+}
+.mobileModal > ul > li > a{
+	color:white;
+	text-decoration: none;
+	font-family: lato;
+	font-size: 27px;
+}
+#closeMobileModal{
+	display: block;
+	position: absolute;
+	margin: 18px;
+	cursor:pointer;
+}
 
 }
