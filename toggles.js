@@ -20,7 +20,7 @@ $(document).ready(function(){
 		mobileToggle = 0;
 	});
 
-	//toggle for solutions page
+	//toggle for solutions page, product solutions
 	$("#productSolutions").click(function(){
 		var containerheight = $(".solutions_productsContainer").height();
 
@@ -30,6 +30,18 @@ $(document).ready(function(){
 		}
 		else{
 			$(".solutions_productsContainer").animate({"height":"0px"},300);
+		}
+	});
+	//container on the solutions page with the markets being served
+	$("#marketsServed").click(function(){
+		var containerheight2 = $(".solutions_marketsContainer").height();
+		if(containerheight2 == 0){
+			$(".solutions_marketsContainer").animate({"height":"500px"},300);
+			$(".solutions_marketsContainer").css({"overflow":"visible"});
+			scroll("#marketsContainer");
+		}
+		else{
+			$(".solutions_marketsContainer").animate({"height":"0px","overflow":"visible"},300);
 		}
 	});
 });
