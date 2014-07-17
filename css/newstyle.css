@@ -422,6 +422,91 @@ CSS for solutions page
 	margin-left: 5%;
 	margin-top: 30%;
 }
+.solutions_secondContainer{
+	width:100%;
+	height:300px;
+	overflow: hidden;
+	text-align: center;
+	display: none;
+}
+.solutions_secondContainerCard{
+	width:45%;
+	height:230px;
+	margin:10px;
+	margin-top: 30px;
+	display: none;
+	background-color: rgb(240,240,240);
+	-webkit-transition: 500ms ease-out 0.01s;
+	-moz-transition: 500ms ease-out 0.01s;
+	-o-transition: 500ms ease-out 0.01s;
+	transition: 500ms ease-out 0.01s;
+	cursor:pointer;
+	overflow: hidden;
+	text-align: center;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+
+}
+.solutions_secondContainerCard:hover{
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 7px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 7px 0px rgba(50, 50, 50, 0.75);
+
+}
+.solutions_cardTitle{
+	color:#0054a4;
+	font-family: lato;
+	font-size: 40px;
+	margin-top: 75px;
+}
+.solutions_productsContainer{
+	width:100%;
+	
+}
+.solutions_productsContainer > ul {
+	width: 90%;
+	margin: auto;
+	padding-top: 10px;
+}
+.solutions_productsContainer > ul > li{
+	font-family: lato;
+	font-size: 15px;
+	color:rgb(50,50,50);
+}
+.solutions_marketsContainer{
+	width:100%;
+	overflow: hidden;
+	text-align: left;
+}
+.solutions_marketsContainer > ul{
+	list-style-type: none;
+	width: 100%;
+	margin:auto;
+}
+.solutions_marketsContainer > ul > li {
+	width:80%;
+	font-family: lato;
+	font-size: 25px;
+	color:rgb(50,50,50);
+	cursor:pointer;
+	margin-top: 100px;
+}
+.solutions_marketsContainer > ul > li > div{
+	font-size:15px;
+	height:150px;
+	-webkit-transition: 500ms ease-out 0.1s;
+	-moz-transition: 500ms ease-out 0.1s;
+	-o-transition: 500ms ease-out 0.1s;
+	transition: 500ms ease-out 0.1s;
+}
+.solutions_marketsContainer > ul > li:hover div{ 
+	display: block;
+}
+.solutions_marketsContainer > ul > li > #specialty{ 
+	height:220px;
+	display: block;
+}
 
 
 /*
@@ -429,7 +514,7 @@ Container for picture on index page, followed by overlay div
 */
 .topPic{
 	width:100%;
-	height:80%;
+	height: 400px;
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-image: url('../2008pics/index_top.jpg');
