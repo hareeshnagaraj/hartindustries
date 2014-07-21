@@ -130,6 +130,22 @@ CSS for the about pag
 	overflow: hidden;
 	background-attachment: fixed;
 }
+/*
+CSS for quality page
+*/
+.quality_subText{
+	font-family: lato;
+	font-size: 20px;
+	width:60%;
+	color:  white;
+	float: left;
+	margin-left:5%;
+	margin-top: 30px;
+}
+.quality_thirdContainer_title{
+	font-size: 35px;
+	padding-bottom: 15px;
+}
 
 /*
 CSS for solutions page
@@ -331,7 +347,22 @@ CSS for the footer
 /*
 	Mobile
 */
-
+/*
+CSS for quality page
+*/
+.quality_subText{
+	font-family: lato;
+	font-size: 20px;
+	width:60%;
+	color:  white;
+	float: left;
+	margin-left:5%;
+	margin-top: 30px;
+}
+.quality_thirdContainer_title{
+	font-size: 35px;
+	padding-bottom: 15px;
+}
 /*
 CSS for the about pag
 */

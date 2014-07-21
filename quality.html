@@ -1,105 +1,188 @@
-<!DOCTYPE html>
+<!-- 
+
+New Quality Page for Hart
+Aiming for a cleaner overall design that meshes with a modern aesthetic
+
+ -->
+
+ <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/newstyle.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-    <title>Quality</title>
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
+    <script type="text/javascript" src="toggles.js"></script>
+    <title>Hart Industries</title>
 
-    <script type="text/javascript">
-
-    $(document).ready(function(){
-
-        // disable_scroll();
-    		
-        $("#hamburger").click(function(){
-
-            $("#hamburger_options").animate({ "height": "250px" }, 200 );
-            $("#hamburger").hide();
-            $("#downarrow").show();
-        });
-
-         $("#downarrow").click(function(){
-            $("#hamburger_options").animate({ "height": "0px" }, 200 );
-            $("#hamburger").show();
-            $("#downarrow").hide();
-        });
-
-    });
-    $(window).scroll(function(){
-    	var topdist = $(window).scrollTop();
-    	if(topdist < 100){
-    		$("#short_description").show();
-    	}
-    	if(topdist > 100){
-    		// $("#short_description").hide();
-    	}
-    	if(topdist > 600){
-
-
-    	}
-    });
-
-    </script>
-
+    <!-- Styles overwritten in this file for convenience -->
+    <style>
+   
+	/*
+	Different image than other page
+	*/
+	.about_topPic{
+		background-image: url('2008pics/quality_top.jpg');
+		background-attachment: fixed;
+	}
+	/*
+	Container for second block of text
+	*/
+	@media handheld, screen and (min-width: 1000px){
+		/*
+		Word SOLUTIONS at the top of the page
+		*/
+		.about_topPicTitle{
+		font-size: 65px;
+		margin-top: 12%;
+		}
+		.about_secondContainer {
+			width: 100%;
+			height: 300px;
+			background-color: #0054a4;
+			overflow: hidden;
+			text-align: center;
+		}
+		.about_thirdContainer {
+			width: 100%;
+			padding-top: 50px;
+			padding-bottom: 0px;
+		}
+		.about_thirdContainer_picture {
+			width: 100%;
+			height: 500px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url('2008pics/quality_lower.jpg');
+			overflow: hidden;
+			background-attachment: fixed;
+		}
+	}
+	@media handheld, screen and (max-width: 999px){
+		/*
+		Word SOLUTIONS at the top of the page
+		*/
+		.about_topPicTitle{
+		font-size: 55px;
+		margin-top: 20%;
+		}
+		.about_secondContainer {
+			width: 100%;
+			height: 800px;
+			font-size: 20px;
+			background-color: #0054a4;
+			overflow: hidden;
+			text-align: center;
+		}
+		.about_thirdContainer_picture {
+			width: 100%;
+			height: 800px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url('2008pics/quality_lower.jpg');
+			overflow: hidden;
+			background-attachment: fixed;
+		}
+	}
+	.about_topPicOverlay > #bottom{
+		width:80%;
+		margin-left:5%;
+		color:white;
+		font-family: Lato;
+		font-size: 20px;
+	}
+    </style>
 </head>
 <body>
-<div id="nav">
-    <div id="whitelogo">
-        <img src="img/hartlogo_small_white.png" />
-    </div>
+<!-- navbar -->
+<div class="navBar">
+	<a href="index.html">
+		<img id="logo" src="img/hartlogo_small_white.png" />
+	</a>
 	<ul>
-		<li><a href="index.html" >HOME</a></li>
+		<li><a href="index.html">HOME</a></li>
+		<!-- Indicating the about page is selected -->
 		<li><a href="about.html">ABOUT</a></li>
 		<li><a href="solutions.html">SOLUTIONS</a></li>
-		<li><a href="quality.html">QUALITY</a></li>
-        <li><a href="community.html">SUSTAINABILITY & COMMUNITY</a></li>
-		<li><a href="contact.html">CONTACT</a></li>
+		<li style="background-color: #0054a4;"><a href="quality.html">QUALITY</a></li>
+		<li><a href="community.html">SUSTAINABILITY & COMMUNITY</a></li>
+		<li style="margin-right:50px;"><a href="">CONTACT</a></li>
+
 	</ul>
     <div id="hamburger"><img src="img/hamburger.png"/></div>
-    <div id="downarrow"><img src="img/arrow_up.png"/></div>
-
-	<div id="hamburger_options">
-        <div>HOME</div>   
-        <div>ABOUT</div>   
-        <div>SOLUTIONS</div>   
-        <div>QUALITY</div>   
-        <div>COMMUNITY</div> 
-        <div>CONTACT</div>     
-    </div>
-</div>
-<div id="qualityWrap">
-    <div id="qualityTitle">QUALITY</div>
-    <div id="qualitySubTitle">Hart Industries takes pride in procuring high quality paper stock and print materials to be used to manufacture excellent packaging materials for our customers.</div>
-
-    <div id="qualitySubContainer">Our company is committed to strong quality assurance, a positive work environment, and continuous improvement of good manufacturing practices. All of which results in the highest quality products made safely and in compliance with regulatory guidelines. Similarly, we are committed to a regular review of our policies and practices in support of our quality policy.<br><br><br>Our employees are driven to achieve the goal of having the highest standard of safety and quality for our products.</div>
 
 </div>
-<div id="qualitySub">
-    <div id="innerTitle">SAFETY STATEMENT</div>
-    <div id="innerContainer">We are committed to operating our business in a safe, healthy, and professional manner with the explicit goal of zero accidents. Although management has the overall responsibility for establishing safety policies and procedures, and ensuring that they are applied consistently and fairly, employees also play a vital role in maintaining a safe work environment and must adhere to Hart's general safety rules.</div>
+<!-- Modal for the Mobile Version of the site -->
+<div class="mobileModal">
+    <img id="closeMobileModal" src="img/hart_closebutton.png" />
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li ><a href="about.html">ABOUT</a></li>
+		<li><a href="solutions.html">SOLUTIONS</a></li>
+		<li><a href="quality.html">QUALITY</a></li>
+		<li><a href="community.html">COMMUNITY</a></li>
+	</ul>
 </div>
 
-<div id="qualitySub2">
-        <div id="innerTitle2" style="background-color:#0054a4;color:white;">FOOD SAFETY</div>
-
-        <div id="qualitySubTitle2" style="background-color:#0054a4;color:white;">Hart Industries is routinely audited by second party auditors to conform to the GFSI (Global Food Safety Initiative). This includes standards such as BRC, AIB, SQF and IFS. (http://www.mygfsi.com) For more information, please contact our Quality department.</div>
-
-        <div id="quality_haacp"><h3>HACCP</h3>Hart has a certified HACCP (Hazard Analysis Critical Control Points) management system in place. HACCP management ensures food safety by monitoring and recording every step involved in the processing of our products, from when the material arrives at our facility to when it is shipped to you. For more information about USDA FDA / Center for Food Safety & Applied Nutrition, visit: www.fda.gov</div>
-
-        <div id="quality_right">
-            <h3>CANADA</h3>
-            Hart Industries, Inc. is certified to sell food contact packaging products in Canada by the Canadian Food Inspection Agency. For more information visit: www.inspection.gc.ca.<br><br><h3>MEDICAL DEVICE PACKAGING</h3>Hart Industries, Inc. is approved to sell medical device packaging in:<br><br>Asia<br>EMEA (Europe, Middle East, Africa)<br>Latin and North America
-        </div>
-
+<!-- Container for the top, with picture, and sub text -->
+<div class="about_topPic">
+	<div class="about_topPicOverlay">
+		<div class="about_topPicTitle">QUALITY</div>
+		<div class="quality_subText">Hart Industries takes pride in procuring high quality paper stock and print materials to be used to manufacture excellent packaging materials for our customers.</div>
+	</div>
 </div>
 
-<div id="footer">
-    <div id="address">11412 Cronridge Drive, Owings Mills MD 21117</div>
-    <ul>
-        <li><img style="width:55px;margin-top:-5px;" src="img/haccp_white.png" /></li>
-    </ul>
-    <div class="bottomtext">Professionals In Packaging</div>
+<!-- Second Container, with the extended intro -->
+<div class="about_secondContainer">
+	<div class="about_secondContainerText">
+		Our company is committed to strong quality assurance, a positive work environment, and continuous improvement of good manufacturing practices. All of which results in the highest quality products made safely and in compliance with regulatory guidelines. Similarly, we are committed to a regular review of our policies and practices in support of our quality policy.
+		<br><br>
+		Our employees are driven to achieve the goal of having the highest standard of safety and quality for our products.
+	</div>
+</div>
+
+<!-- Third Container, with history and such -->
+<div class="about_thirdContainer">
+	<div class="about_thirdContainer_description" style="padding-bottom:50px;">
+		<div class="quality_thirdContainer_title">
+			Safety Statement
+		</div>
+		We are committed to operating our business in a safe, healthy, and professional manner with the explicit goal of zero accidents. Although management has the overall responsibility for establishing safety policies and procedures, and ensuring that they are applied consistently and fairly, employees also play a vital role in maintaining a safe work environment and must adhere to Hart's general safety rules.<br><br>
+		<div class="quality_thirdContainer_title">
+			Food Safety
+		</div>
+		Hart Industries is routinely audited by second party auditors to conform to the GFSI (Global Food Safety Initiative). This includes standards such as BRC, AIB, SQF and IFS. (http://www.mygfsi.com) For more information, please contact our Quality department.<br><br>
+		<div class="quality_thirdContainer_title">
+			HACCP
+		</div>
+		Hart has a certified HACCP (Hazard Analysis Critical Control Points) management system in place. HACCP management ensures food safety by monitoring and recording every step involved in the processing of our products, from when the material arrives at our facility to when it is shipped to you. For more information about USDA FDA / Center for Food Safety & Applied Nutrition, visit: www.fda.gov<br><br>
+
+	</div>
+</div>
+<div class="about_thirdContainer_picture">
+	<div class="about_topPicOverlay">
+		<div id="bottom" class="about_thirdContainer_description" style="padding-top:100px;">
+			<div class="quality_thirdContainer_title">
+				CANADA
+			</div>
+			Hart Industries, Inc. is certified to sell food contact packaging products in Canada by the Canadian Food Inspection Agency. For more information visit: www.inspection.gc.ca.<br><br>
+			<div class="quality_thirdContainer_title">
+				MEDICAL DEVICE PACKAGING
+			</div>
+			Hart Industries, Inc. is approved to sell medical device packaging in:
+			<br>Asia
+			<br>EMEA (Europe, Middle East, Africa)
+			<br>Latin and North America<br><br>
+		</div>
+	</div>
+</div>
+
+
+<!-- Footer -->
+<div class="hartfooter">
+	<div class="footerAddress">
+		11412 Cronridge Drive, Owings Mills MD 21117
+	</div>
+	<img src="img/haccp_white.png" alt="" class="haacp">
 </div>
 </body>
-</html>
