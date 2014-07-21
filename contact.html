@@ -1,53 +1,206 @@
-<!DOCTYPE html>
+<!-- 
+
+New community Page for Hart
+Aiming for a cleaner overall design that meshes with a modern aesthetic
+
+ -->
+
+ <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/newstyle.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-    <title>Solutions</title>
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
+    <script type="text/javascript" src="toggles.js"></script>
+    <title>Hart Industries</title>
+    <script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAEby7YD0fAH-SKQamGMydNJtK-oL7g6vA&sensor=true"></script>
 
+    <!-- Styles overwritten in this file for convenience -->
+    <style>
+    html,body{
+    	height:100%;
+    }
 
-    <script type="text/javascript">
+   
+	/*
+	Different image than other page
+	*/
+	.about_topPic{
+		background-image: url('img/hart_background8.jpg');
+		background-attachment: fixed;
+		height:250px;
+	}
+	/*
+	Container for second block of text
+	*/
+	@media handheld, screen and (min-width: 1000px){
+		/*
+		Word SOLUTIONS at the top of the page
+		*/
+		#contactbox{
+		position: absolute;
+		top: 250px;
+		background-color: white;
+		height: 80%;
+		}
+		#contactbox > div{
+		width:80%;
+		margin-top: 50px;
+		margin-left: 5%;
+		font-family: lato;
+		}
+		.about_topPicTitle{
+		font-size: 55px;
+		margin-top: 10%;
+		width:100%;
+		}
+		.about_secondContainer {
+			width: 100%;
+			height: 300px;
+			background-color: #0054a4;
+			overflow: hidden;
+			text-align: center;
+		}
+		.about_thirdContainer {
+			width: 100%;
+			padding-top: 50px;
+			padding-bottom: 0px;
+		}
+		.about_thirdContainer_picture {
+			width: 100%;
+			height: 500px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url('2008pics/quality_lower.jpg');
+			overflow: hidden;
+			background-attachment: fixed;
+		}
+		#gmapsContainer{
+			width:100%;
+			height:80%;
+		}
+	}
+	@media handheld, screen and (max-width: 999px){
+		#contactbox{
 
-    $(document).ready(function(){
+		background-color: white;
+		height: 400px;
+		}
+		#contactbox > div{
+		width:80%;
+		margin-top: 50px;
+		margin-left: 5%;
+		font-family: lato;
+		}
+		#gmapsContainer{
+			width:100%;
+			height:400px;
+		}
+		/*
+		Word SOLUTIONS at the top of the page
+		*/
+		.about_topPicTitle{
+		font-size: 35px;
+		margin-top: 20%;
+		}
+		.about_secondContainer {
+			width: 100%;
+			height: 800px;
+			font-size: 20px;
+			background-color: #0054a4;
+			overflow: hidden;
+			text-align: center;
+		}
+		.about_thirdContainer_picture {
+			width: 100%;
+			height: 800px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url('2008pics/quality_lower.jpg');
+			overflow: hidden;
+			background-attachment: fixed;
+		}
+	}
+	.about_topPicOverlay > #bottom{
+		width:80%;
+		margin-left:5%;
+		color:white;
+		font-family: Lato;
+		font-size: 20px;
+	}
+	/*
+		Initializing the google maps
+	*/
 
-        // disable_scroll();
-    		
-
+    </style>
+    <script>
+ function initialize() {
+  var location = new google.maps.LatLng(39.439897,-76.776497);
+  var mapOptions = {
+    center: new google.maps.LatLng(39.439897,-76.776497),
+    disableDefaultUI: true,
+    scrollwheel: false,
+    zoom: 13
+  };
+  var map = new google.maps.Map(document.getElementById("gmapsContainer"),
+      mapOptions);
+  new google.maps.Marker({
+        position: location,
+        map: map
     });
 
-    </script>
 
+  }
+  $(document).ready(function(){
+  	initialize();
+  });
+  </script>
 </head>
 <body>
-<div id="nav">
-    <div id="whitelogo">
-        <img src="img/hartlogo_small_white.png" />
-    </div>
+<!-- navbar -->
+<div class="navBar">
+	<a href="index.html">
+		<img id="logo" src="img/hartlogo_small_white.png" />
+	</a>
 	<ul>
-		<li><a href="index.html" >HOME</a></li>
+		<!-- Indicating the about page is selected -->
 		<li><a href="about.html">ABOUT</a></li>
 		<li><a href="solutions.html">SOLUTIONS</a></li>
-		<li><a href="quality.html">QUALITY</a></li>
-        <li><a href="community.html">SUSTAINABILITY & COMMUNITY</a></li>
-		<li><a href="contact.html">CONTACT</a></li>
+		<li ><a href="quality.html">QUALITY</a></li>
+		<li ><a href="community.html">SUSTAINABILITY & COMMUNITY</a></li>
+		<li style="margin-right:50px;background-color: #0054a4;"><a href="contact.html">CONTACT</a></li>
+
 	</ul>
     <div id="hamburger"><img src="img/hamburger.png"/></div>
-    <div id="downarrow"><img src="img/arrow_up.png"/></div>
 
-	<div id="hamburger_options">
-        <div>HOME</div>   
-        <div>ABOUT</div>   
-        <div>SOLUTIONS</div>   
-        <div>QUALITY</div>   
-        <div>COMMUNITY</div> 
-        <div>CONTACT</div>     
-    </div>
 </div>
-<div style="width:100%;height:100%;overflow:hidden;">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3081.428110550365!2d-76.7768812!3d39.437054800000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c816f771c5cbc3%3A0xfafb2108a1934933!2s11412+Cronridge+Dr!5e0!3m2!1sen!2sus!4v1401703596431" width="100%" height="120%" frameborder="0" style="border:0;margin-top:-10%;"></iframe>
-    <div id="contactbox">
+<!-- Modal for the Mobile Version of the site -->
+<div class="mobileModal">
+    <img id="closeMobileModal" src="img/hart_closebutton.png" />
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li ><a href="about.html">ABOUT</a></li>
+		<li><a href="solutions.html">SOLUTIONS</a></li>
+		<li><a href="quality.html">QUALITY</a></li>
+		<li><a href="community.html">COMMUNITY</a></li>
+	</ul>
+</div>
+
+<!-- Container for the top, with picture, and sub text -->
+<div class="about_topPic">
+	<div class="about_topPicOverlay">
+		<div class="about_topPicTitle">CONTACT</div>
+	</div>
+</div>
+
+<!-- Google maps container -->
+<div id="gmapsContainer">
+	
+</div>
+
+<div id="contactbox">
         <div>
             Toll free: 800-638-2700<br>
             Local: 410-581-1900<br>
@@ -61,14 +214,13 @@
             Graphics Coordinator - Stephanie Brown, ext. 1411
         </div>
     </div>
-</div>
 
-<div id="footer" style="position:fixed;bottom:0;">
-    <div id="address">11412 Cronridge Drive, Owings Mills MD 21117</div>
-    <ul>
-        <li><img style="width:55px;margin-top:-5px;" src="img/haccp_white.png" /></li>
-    </ul>
-    <div class="bottomtext">Professionals In Packaging</div>
+
+<!-- Footer -->
+<div class="hartfooter">
+	<div class="footerAddress">
+		11412 Cronridge Drive, Owings Mills MD 21117
+	</div>
+	<img src="img/haccp_white.png" alt="" class="haacp">
 </div>
 </body>
-</html>
