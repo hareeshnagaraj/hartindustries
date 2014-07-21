@@ -44,6 +44,7 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
 		top: 250px;
 		background-color: white;
 		height: 80%;
+		width: 450px;
 		}
 		#contactbox > div{
 		width:80%;
@@ -142,7 +143,8 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
     center: new google.maps.LatLng(39.439897,-76.776497),
     disableDefaultUI: true,
     scrollwheel: false,
-    zoom: 13
+    zoom: 11,
+    MapType: "satellite"
   };
   var map = new google.maps.Map(document.getElementById("gmapsContainer"),
       mapOptions);
