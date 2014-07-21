@@ -18,7 +18,7 @@ Container for picture on index page, followed by overlay div
 	background-position: 0px -100px;
 	background-repeat:no-repeat;
 	background-image: url('../2008pics/index_top.jpg');
-
+	background-attachment: fixed;
 }
 .topPicOverlay{
 	width:100%;
