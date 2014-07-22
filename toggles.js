@@ -23,7 +23,7 @@ $(document).ready(function(){
 	//toggle for solutions page, product solutions
 	$("#productSolutions").click(function(){
 		var containerheight = $(".solutions_productsContainer").height();
-
+		$(".solutions_marketsContainer").animate({"height":"0px"},300);
 		if(containerheight == 0){
 			$(".solutions_productsContainer").animate({"height":"400px"},300);
 			scroll("#productsContainer");
@@ -35,6 +35,7 @@ $(document).ready(function(){
 	//container on the solutions page with the markets being served
 	$("#marketsServed").click(function(){
 		var containerheight2 = $(".solutions_marketsContainer").height();
+		$(".solutions_productsContainer").animate({"height":"0px"},300);
 		if(containerheight2 == 0){
 			$(".solutions_marketsContainer").animate({"height":"500px"},300);
 			$(".solutions_marketsContainer").css({"overflow":"visible"});

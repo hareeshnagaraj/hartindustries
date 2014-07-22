@@ -108,14 +108,14 @@ CSS for the about pag
 	text-align: center;
 }
 .about_secondContainerText{
-	width:80%;
+	width: 80%;
 	font-family: lato;
-	margin:auto;
-	color:white;
-	text-align: left;
+	margin: auto;
+	color: white;
+	text-align: center;
 	font-size: 25px;
 	margin-top: 50px;
-	margin-left: 5%;
+	font-style: italic;
 }
 .about_thirdContainer{
 	width:100%;
@@ -161,7 +161,7 @@ CSS for solutions page
 */
 .solutions_topPic{
 	width:100%;
-	height:400px;
+	height: 435px;
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-image: url('../2008pics/solutions_top.jpg');
@@ -192,9 +192,9 @@ CSS for solutions page
 }
 .solutions_secondContainerCard{
 	width:45%;
-	height:230px;
+	height: 180px;
 	margin:10px;
-	margin-top: 30px;
+	margin-top: 35px;
 	display: inline-block;
 	background-color: rgb(240,240,240);
 	-webkit-transition: 500ms ease-out 0.01s;
@@ -219,7 +219,7 @@ CSS for solutions page
 	color:#0054a4;
 	font-family: lato;
 	font-size: 40px;
-	margin-top: 75px;
+	margin-top: 65px;
 }
 .solutions_productsContainer{
 	width:100%;
