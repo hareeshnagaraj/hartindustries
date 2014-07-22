@@ -52,7 +52,7 @@ Container for picture on index page, followed by overlay div
 }
 .index_secondContainer_card{
 	width:30%;
-	height:200px;
+	height: 230px;
 	display: inline-block;
 	margin: 10px;
 	margin-top: 20px;
