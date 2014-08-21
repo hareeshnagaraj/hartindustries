@@ -31,6 +31,9 @@ Hareesh Nagaraj & Henry Tazewell
 		Front page loop to switch index pic
     */
     var pictures = ['index_top1.jpg','index_top2.jpg','index_top3.jpg','index_top4.jpg'];
+    $(pictures).each(function() {	//caching images
+			var image = $('<img />').attr('src', '2008pics/'+this);
+		});
     var i = 0;
     setInterval(function () {
     	i++;
@@ -39,7 +42,6 @@ Hareesh Nagaraj & Henry Tazewell
     	}
     	var newBackground = 'url(2008pics/'+pictures[i]+')';
     	$(".topPic").css({'background-image':newBackground});
-    	// $(".topPic").animate({})
   	}, 7000);
     </script>
 
