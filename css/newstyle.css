@@ -173,7 +173,7 @@ CSS for solutions page
 .solutions_topPicOverlay{
 	width:100%;
 	height:100%;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.5);
 }
 .solutions_topPicTitle{
 	font-family: lato;
