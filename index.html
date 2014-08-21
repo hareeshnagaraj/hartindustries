@@ -3,14 +3,14 @@
 New Index Page for Hart
 Aiming for a cleaner overall design that meshes with a modern aesthetic
 
+Hareesh Nagaraj & Henry Tazewell
  -->
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/newstyle.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css"/>
-
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
@@ -25,8 +25,22 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
 		    moveSlides: 1,
 		    slideMargin: 10
 		});
-		$('.bx-viewport').css({'height':'350px','width':'97%','margin':'auto'});
+		$('.bx-viewport').css({'height':'350px!important','width':'97%','margin':'auto'});
     });
+    /*
+		Front page loop to switch index pic
+    */
+    var pictures = ['index_top1.jpg','index_top2.jpg','index_top3.jpg','index_top4.jpg'];
+    var i = 0;
+    setInterval(function () {
+    	i++;
+    	if(i >= pictures.length){
+    		i=0;
+    	}
+    	var newBackground = 'url(2008pics/'+pictures[i]+')';
+    	$(".topPic").css({'background-image':newBackground});
+    	// $(".topPic").animate({})
+  	}, 7000);
     </script>
 
     <title>Hart Industries</title>
@@ -64,12 +78,10 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
 <div class="topPic">
 	<div class="topPicOverlay">
 		<div class="topPicQuote">
-			"Exceptional customer service defines Hart Industries."
+			"Professionals in packaging since 1969"
 		</div>
 		<div class="topPicSubText">
-			Hart Industries has been a family owned and operated packaging material supplier since 1969. Exceptional customer service defines Hart Industries and has made us a long term supplier to some of the largest companies in the United States and abroad.
-			<br><br>
-			Hart Industries, Inc. is a premiere source for world class flexographic printing and converting located in a modern, hygienic, climate controlled facility in Owing's Mills MD. Hart Industries can improve your operations and bottom line with highly reliable consistency and quality packaging solutions.
+			Hart Industries, Inc. is a premiere source for world class flexographic printing and converting located in a modern, hygienic, climate controlled facility in Owing's Mills MD. Hart Industries' dedication to customer services and reliablity has allowed us to become a long-term supplier of quality packaging solutions to the largest companies in the US and abroad.
 		</div>
 	</div>
 </div>
@@ -81,7 +93,7 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
 			Candy and Confectionary
 		</div>
 		<div class="index_secondContainer_descrip">
-			Hart Industries currently serves the largest produces of candy and confectionary consumer products around the world. In this market we provide coated papers for gum wrappers (twist, cube, and stick), cough drops, throat lozenges, hard candy wrappers (twist and cube) as well as coated and uncoated layer board for support stock (U-board).
+			Hart Industries currently serves the largest producers of candy and confectionary consumer products around the world. In this market we provide coated papers for gum wrappers (twist, cube, and stick), cough drops, throat lozenges, hard candy wrappers (twist and cube) as well as coated and uncoated layer board for support stock (U-board).
 		</div>
 	</div>
 	<div class="index_secondContainer_card">
@@ -89,7 +101,7 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
 			Tea
 		</div>
 		<div class="index_secondContainer_descrip">
-			Hart Industries provides specialty packing in the tea industry in the form of tea envelopes to the largest consumer tea suppliers around the world. We incorporate the use of precession dye cutting to serve the tea industry with multiple styles of tea envelope.
+			Hart Industries provides specialty packing in the tea industry in the form of tea envelopes to the largest consumer tea suppliers around the world. We incorporate precision dye cutting to supply the tea industry with various styles of tea envelopes using heat seal and crimp aid.
 		</div>
 	</div>
 	<div class="index_secondContainer_card">
@@ -113,7 +125,7 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
 			Butter
 		</div>
 		<div class="index_secondContainer_descrip">
-			Hart Industries provides specialty packing in the tea industry in the form of tea envelopes to the largest consumer tea suppliers around the world. We incorporate the use of precession dye cutting to serve the tea industry with multiple styles of tea envelope.
+			Hart Industries supplies the largest distributors of margarine and dairy products with coated & uncoated grease resistant wraps for varoius sizes, ranging from quarter pound sticks to one pound bricks. Additionally, we provide treated hat and matte stock for portioned single serve butter and margarine packaging.
 		</div>
 	</div>
 </div>

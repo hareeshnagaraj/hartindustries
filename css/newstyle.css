@@ -13,25 +13,26 @@ Container for picture on index page, followed by overlay div
 */
 .topPic{
 	width:100%;
-	height: 600px;
+	height: 550px;
 	background-size: cover;
 	background-position: 0px -100px;
 	background-repeat:no-repeat;
-	background-image: url('../2008pics/index_top.jpg');
+	background-image: url('../2008pics/index_top1.jpg');
 	background-attachment: fixed;
 }
 .topPicOverlay{
 	width:100%;
 	height:100%;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.4);
 }
 .topPicQuote{
 	font-family: lato;
+	font-style: italic;
 	font-size: 40px;
 	color: white;
 	width: 75%;
 	float: left;
-	margin-top: 20%;
+	margin-top: 250px;
 	margin-left: 5%;
 	text-align: left;
 }
@@ -39,9 +40,9 @@ Container for picture on index page, followed by overlay div
 	font-family: lato;
 	font-size: 20px;
 	color: white;
-	width: 75%;
+	width: 72%;
 	margin-left:5%;
-	margin-top: 40px;
+	margin-top: 90px;
 	float: left;
 	text-align: left;
 }
@@ -52,7 +53,7 @@ Container for picture on index page, followed by overlay div
 }
 .index_secondContainer_card{
 	width:30%;
-	height: 230px;
+	height: 250px;
 	display: inline-block;
 	margin: 10px;
 	margin-top: 20px;
@@ -79,12 +80,11 @@ CSS for the about pag
 */
 .about_topPic{
 	width:100%;
-	height:400px;
+	height: 500px;
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-image: url('../2008pics/about_top.jpg');
 	overflow: hidden;
-
 }
 .about_topPicOverlay{
 	width:100%;
@@ -620,7 +620,7 @@ Container for picture on index page, followed by overlay div
 	height: 1000px;
 	background-size: cover;
 	background-repeat:no-repeat;
-	background-image: url('../2008pics/index_top.jpg');
+	background-image: url('../2008pics/index_top1.jpg');
 }
 .topPicOverlay{
 	width:100%;
@@ -630,6 +630,7 @@ Container for picture on index page, followed by overlay div
 .topPicQuote{
 	font-family: lato;
 	font-size: 40px;
+	font-style: italic;
 	color: white;
 	width: 80%;
 	float: right;

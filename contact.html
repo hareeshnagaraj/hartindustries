@@ -17,21 +17,23 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
     <script type="text/javascript"
   src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAEby7YD0fAH-SKQamGMydNJtK-oL7g6vA&sensor=true"></script>
 
-    <!-- Styles overwritten in this file for convenience -->
-    <style>
-    html,body{
-    	height:100%;
-    }
-
-   
+  <!-- Styles overwritten in this file for convenience -->
+  <style>
+  html,body{
+  	height:100%;
+  }
 	/*
 	Different image than other page
 	*/
 	.about_topPic{
-		background-image: url('img/hart_background8.jpg');
+		background-image: none;
+    background-color: #0054a4;
 		background-attachment: fixed;
-		height:250px;
+		height:100px;
 	}
+  .about_topPicOverlay{
+    background-color: rgba(0,0,0,0);
+  }
 	/*
 	Container for second block of text
 	*/
@@ -39,15 +41,21 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
 		/*
 		Word SOLUTIONS at the top of the page
 		*/
+    .navBar > a > #logo {
+    width: 150px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    }
 		#contactbox{
-		position: absolute;
-		top: 250px;
-		background-color: white;
-		height: 80%;
-		width: 450px;
+    position: absolute;
+    top: 100px;
+    background-color: white;
+    height: 100%;
+    width: 540px;
 		}
 		#contactbox > div{
-		width:80%;
+    width: 90%;
 		margin-top: 50px;
 		margin-left: 5%;
 		font-family: lato;
@@ -80,7 +88,7 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
 		}
 		#gmapsContainer{
 			width:100%;
-			height:80%;
+			height:100%;
 		}
 	}
 	@media handheld, screen and (max-width: 999px){
@@ -138,22 +146,23 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
     </style>
     <script>
  function initialize() {
-  var location = new google.maps.LatLng(39.439897,-76.776497);
-  var mapOptions = {
-    center: new google.maps.LatLng(39.439897,-76.776497),
-    disableDefaultUI: true,
-    scrollwheel: false,
-    zoom: 11,
-    MapType: "satellite"
-  };
-  var map = new google.maps.Map(document.getElementById("gmapsContainer"),
-      mapOptions);
-  new google.maps.Marker({
-        position: location,
-        map: map
-    });
-
-
+    var location = new google.maps.LatLng(39.439897,-76.776497);
+    var mapOptions = {
+      center: new google.maps.LatLng(39.439897,-76.776497),
+      disableDefaultUI: true,
+      scrollwheel: false,
+      draggable:false,
+      zoomControl:false,
+      disableDoubleClickZoom:true,
+      zoom: 11,
+      MapType: "satellite"
+    };
+    var map = new google.maps.Map(document.getElementById("gmapsContainer"),
+        mapOptions);
+    new google.maps.Marker({
+          position: location,
+          map: map
+      });
   }
   $(document).ready(function(){
   	initialize();
@@ -172,7 +181,7 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
 		<li><a href="solutions.html">SOLUTIONS</a></li>
 		<li ><a href="quality.html">QUALITY</a></li>
 		<li ><a href="community.html">SUSTAINABILITY & COMMUNITY</a></li>
-		<li style="margin-right:50px;background-color: #0054a4;"><a href="contact.html">CONTACT</a></li>
+		<li style="margin-right:50px;background-color: white;color:#0054a4;"><a style="color:#0054a4;" href="contact.html">CONTACT</a></li>
 
 	</ul>
     <div id="hamburger"><img src="img/hamburger.png"/></div>
@@ -192,9 +201,9 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
 
 <!-- Container for the top, with picture, and sub text -->
 <div class="about_topPic">
-	<div class="about_topPicOverlay">
+	<!-- <div class="about_topPicOverlay">
 		<div class="about_topPicTitle">CONTACT</div>
-	</div>
+	</div> -->
 </div>
 
 <!-- Google maps container -->
@@ -203,16 +212,20 @@ Aiming for a cleaner overall design that meshes with a modern aesthetic
 </div>
 
 <div id="contactbox">
-        <div>
+        <div><br><br><br>
+            11412 Cronridge Drive<br>
+            Owings Mills, MD 21117<br><br><br>
             Toll free: 800-638-2700<br>
             Local: 410-581-1900<br>
-            E-mail: customerservice@hartind.com<br><br><br><br><br><br>
-            President -   Timothy Hart,   ext. 1410<br>
-            V.P. Sales  -    Duffy Hart,     ext. 1400<br>
+            E-mail: customerservice@hartind.com<br><br><br>
+            President -   Timothy Hart<br>
+            V.P. Sales  -    Duffy Hart<br>
+            Operations Engineer  -    Mike Schultz<br>
+            Chief Financial Officer -  Ali Zafar<br>
             Sales Project Manager -  Scott Zirbel,   ext. 1405<br>
-            Quality Assurance   - Jordan Towart,     ext. 1403<br>
-            Plant Engineer  -    Mike Schultz,   ext. 1408<br>
-            Logistics Manager   - Rick Bors,     ext. 1406<br>
+            <font style="size:14px;">Quality Assurance & Food Safety Director  - Timothy Hart Jr,     ext. 1414<br></font>
+            Quality Efficiency Lead   - Matt Badila,    ext. 1403<br>
+            Logistics Manager   - Rick Bors,     ext. 1406<br>            
             Graphics Coordinator - Stephanie Brown, ext. 1411
         </div>
     </div>
