@@ -35,14 +35,14 @@ Hareesh Nagaraj & Henry Tazewell
 			var image = $('<img />').attr('src', '2008pics/'+this);
 		});
     var i = 0;
-    setInterval(function () {
-    	i++;
-    	if(i >= pictures.length){
-    		i=0;
-    	}
-    	var newBackground = 'url(2008pics/'+pictures[i]+')';
-    	$(".topPic").css({'background-image':newBackground});
-  	}, 7000);
+   //  setInterval(function () {
+   //  	i++;
+   //  	if(i >= pictures.length){
+   //  		i=0;
+   //  	}
+   //  	var newBackground = 'url(2008pics/'+pictures[i]+')';
+   //  	$(".topPic").css({'background-image':newBackground});
+  	// }, 7000);
     </script>
 
     <title>Hart Industries</title>
@@ -134,7 +134,7 @@ Hareesh Nagaraj & Henry Tazewell
 
 
 <!-- Footer -->
-<div class="hartfooter">
+<div class="hartfooter" style="position:absolute;">
 	<div class="footerAddress">
 		11412 Cronridge Drive, Owings Mills MD 21117
 	</div>

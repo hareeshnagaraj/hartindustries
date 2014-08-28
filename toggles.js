@@ -26,22 +26,30 @@ $(document).ready(function(){
 		$(".solutions_marketsContainer").animate({"height":"0px"},300);
 		if(containerheight == 0){
 			$(".solutions_productsContainer").animate({"height":"450px"},300);
+			$(".hartfooter").css({"position":"relative"});
 			scroll("#productsContainer");
 		}
 		else{
-			$(".solutions_productsContainer").animate({"height":"0px"},300);
+			$(".hartfooter").css({"position":"absolute"});
+			$(".solutions_productsContainer").animate({"height":"0px"},{duration:300,complete:function(){
+				$(".hartfooter").css({"position":"absolute"});
+			}});
+			
 		}
+
 	});
 	//container on the solutions page with the markets being served
 	$("#marketsServed").click(function(){
 		var containerheight2 = $(".solutions_marketsContainer").height();
 		$(".solutions_productsContainer").animate({"height":"0px"},300);
 		if(containerheight2 == 0){
+			$(".hartfooter").css({"position":"relative"});
 			$(".solutions_marketsContainer").animate({"height":"450px"},300);
 			$(".solutions_marketsContainer").css({"overflow":"visible"});
 			scroll("#marketsContainer");
 		}
 		else{
+			$(".hartfooter").css({"position":"absolute"});
 			$(".solutions_marketsContainer").animate({"height":"0px","overflow":"visible"},300);
 		}
 	});

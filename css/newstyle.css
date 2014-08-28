@@ -182,7 +182,7 @@ CSS for solutions page
 	color: white;
 	float: left;
 	margin-left: 5%;
-	margin-top: 16%;
+	margin-top: 300px;
 }
 .solutions_secondContainer{
 	width:100%;
@@ -368,6 +368,7 @@ CSS for the footer
 	height:60px;
 	background-color: #0054a4;
 	overflow: hidden;
+	position: relative;
 }
 .footerAddress{
 	color:white;
